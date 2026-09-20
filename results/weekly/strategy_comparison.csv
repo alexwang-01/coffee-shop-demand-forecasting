@@ -1,0 +1,4 @@
+Candidate pool,Groups,June mean MASE
+Classical only,61,1.0718313348781512
+ML only,61,0.9941891059024599
+Classical + ML,61,0.9989166748808457

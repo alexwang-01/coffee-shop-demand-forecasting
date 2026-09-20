@@ -1,0 +1,62 @@
+group_id,Group / stock items,Unit,Selected model,May MSE,Eligible candidates
+finished_1,Brazilian - Organic,each,Linear regression,2.307864665157266,15
+finished_2,Our Old Time Diner Blend,each,Boosting(10),1.2107111367184256,15
+finished_3,Espresso Roast,each,Linear regression,1.235442990512728,15
+finished_4,Primo Espresso Roast,each,Linear regression,1.4501074831245364,15
+finished_5,Columbian Medium Roast,each,Linear regression,2.527196495678592,15
+finished_6,Ethiopia,each,Ridge(10),1.6823574916174342,15
+finished_7,Jamacian Coffee River,each,Holt,1.2331284331709242,15
+finished_8,Civet Cat,each,Ridge(10),8.970419865478082,15
+finished_9,Organic Decaf Blend,each,Ridge(10),1.9833930037591687,15
+finished_10,Guatemalan Sustainably Grown,each,Boosting(10),1.3987499630583449,15
+finished_11,Lemon Grass,each,Boosting(10),2.263290135089133,15
+finished_12,Peppermint,each,Holt,1.5455507065179044,15
+finished_13,English Breakfast,each,Linear regression,1.930253278826257,15
+finished_14,Earl Grey,each,Holt,0.8824978255265927,15
+finished_15,Serenity Green Tea,each,Linear regression,1.4141499020189447,15
+finished_16,Traditional Blend Chai,each,Linear regression,1.4797449288639863,15
+finished_17,Morning Sunrise Chai,each,Linear regression,1.169475691131352,15
+finished_18,Spicy Eye Opener Chai,each,Boosting(10),0.8167518760201199,15
+finished_19,Dark chocolate,each,Ridge(10),0.8677153241139176,15
+finished_20,Sustainably Grown Organic,each,Linear regression,1.9776208059112368,15
+finished_21,Chili Mayan,each,Linear regression,1.5997495934907096,15
+brew_beans_0,Our Old Time Diner Blend brewing beans,kg,Ridge(1),0.1260934300290246,16
+cup_sm,Small cup / Small lid,each,Holt,1231.5223817295678,16
+cup_rg,Regular cup / Regular lid,each,HW multiplicative,7753.501564819055,16
+cup_lg,Large cup / Large lid,each,Linear regression,8883.499511793321,16
+brew_beans_1,Brazilian brewing beans,kg,HW additive,0.1122103048432938,16
+brew_beans_2,Columbian Medium Roast brewing beans,kg,Linear regression,0.1802724289453049,16
+brew_beans_3,Ethiopia brewing beans,kg,MA(14),0.1761928192423747,16
+brew_beans_4,Jamaican Coffee River brewing beans,kg,Linear regression,0.229042187196701,16
+cup_espresso,Espresso cup,each,MA(14),212.00497834945665,16
+espresso_house,House espresso beans,kg,Holt,0.3145783923672799,16
+milk,Dairy milk,L,Linear regression,142.36466396781074,16
+tea_0,Lemon Grass brewing tea,kg,Linear regression,0.0025797123015154,16
+tea_1,Peppermint brewing tea,kg,Holt,0.0035597693524433,16
+tea_2,Serenity Green Tea brewing tea,kg,Linear regression,0.0034189045184415,16
+tea_3,English Breakfast brewing tea,kg,Ridge(1),0.0038634797109051,16
+tea_4,Earl Grey brewing tea,kg,Linear regression,0.003040910959258,16
+tea_5,Traditional Blend Chai brewing tea,kg,Naive,0.0019345806451612,16
+tea_6,Morning Sunrise Chai brewing tea,kg,Holt,0.0033639685045144,16
+tea_7,Spicy Eye Opener Chai brewing tea,kg,Ridge(10),0.0022540585362533,16
+cocoa_dark,Dark chocolate premix,kg,MA(14),0.1786048162528127,16
+cocoa_organic,Organic chocolate premix,kg,Linear regression,0.2502615350060002,16
+finished_63,Carmel syrup,each,Linear regression,225.4686823881558,15
+finished_64,Hazelnut syrup,each,Linear regression,80.99199518483714,15
+finished_65,Sugar Free Vanilla syrup,each,Naive,238.16129032258064,15
+finished_69,Hazelnut Biscotti,each,Naive,22.677419354838708,16
+finished_70,Cranberry Scone,each,Naive,22.451612903225808,16
+finished_71,Chocolate Croissant,each,Linear regression,87.11611611351171,16
+finished_72,Ginger Scone,each,HW additive,56.15529769406182,16
+finished_73,Almond Croissant,each,Naive,16.838709677419356,16
+finished_74,Ginger Biscotti,each,Linear regression,19.836560291697587,16
+finished_75,Croissant,each,Holt,19.362656371341597,16
+finished_76,Chocolate Chip Biscotti,each,Linear regression,19.081889554509907,16
+finished_77,Oatmeal Scone,each,HW additive,12.287020504493215,16
+finished_78,Scottish Cream Scone,each,MA(7),27.467721137503627,16
+finished_79,Jumbo Savory Scone,each,Linear regression,17.093658122923188,16
+finished_81,I Need My Bean! T-shirt,each,Linear regression,4.522517511282763,15
+finished_82,I Need My Bean! Diner mug,each,Ridge(10),4.0918510256381655,15
+finished_83,I Need My Bean! Latte cup,each,Linear regression,1.9655322907055064,15
+finished_84,Chocolate syrup,each,Naive,287.7741935483871,15
+espresso_ouro,Ouro Brasileiro espresso beans,kg,Linear regression,0.0243094552383134,15

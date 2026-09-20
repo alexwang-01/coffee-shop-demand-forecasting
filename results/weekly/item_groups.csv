@@ -1,0 +1,65 @@
+material_id,group_id,ratio,material_name,unit,inventory_type
+brew_beans_0,brew_beans_0,1.0,Our Old Time Diner Blend brewing beans,kg,Ingredient
+brew_beans_1,brew_beans_1,1.0,Brazilian brewing beans,kg,Ingredient
+brew_beans_2,brew_beans_2,1.0,Columbian Medium Roast brewing beans,kg,Ingredient
+brew_beans_3,brew_beans_3,1.0,Ethiopia brewing beans,kg,Ingredient
+brew_beans_4,brew_beans_4,1.0,Jamaican Coffee River brewing beans,kg,Ingredient
+cocoa_dark,cocoa_dark,1.0,Dark chocolate premix,kg,Ingredient
+cocoa_organic,cocoa_organic,1.0,Organic chocolate premix,kg,Ingredient
+cup_espresso,cup_espresso,1.0,Espresso cup,each,Packaging
+cup_lg,cup_lg,1.0,Large cup,each,Packaging
+cup_rg,cup_rg,1.0,Regular cup,each,Packaging
+cup_sm,cup_sm,1.0,Small cup,each,Packaging
+espresso_house,espresso_house,1.0,House espresso beans,kg,Ingredient
+espresso_ouro,espresso_ouro,1.0,Ouro Brasileiro espresso beans,kg,Ingredient
+finished_1,finished_1,1.0,Brazilian - Organic,each,Finished goods
+finished_10,finished_10,1.0,Guatemalan Sustainably Grown,each,Finished goods
+finished_11,finished_11,1.0,Lemon Grass,each,Finished goods
+finished_12,finished_12,1.0,Peppermint,each,Finished goods
+finished_13,finished_13,1.0,English Breakfast,each,Finished goods
+finished_14,finished_14,1.0,Earl Grey,each,Finished goods
+finished_15,finished_15,1.0,Serenity Green Tea,each,Finished goods
+finished_16,finished_16,1.0,Traditional Blend Chai,each,Finished goods
+finished_17,finished_17,1.0,Morning Sunrise Chai,each,Finished goods
+finished_18,finished_18,1.0,Spicy Eye Opener Chai,each,Finished goods
+finished_19,finished_19,1.0,Dark chocolate,each,Finished goods
+finished_2,finished_2,1.0,Our Old Time Diner Blend,each,Finished goods
+finished_20,finished_20,1.0,Sustainably Grown Organic,each,Finished goods
+finished_21,finished_21,1.0,Chili Mayan,each,Finished goods
+finished_3,finished_3,1.0,Espresso Roast,each,Finished goods
+finished_4,finished_4,1.0,Primo Espresso Roast,each,Finished goods
+finished_5,finished_5,1.0,Columbian Medium Roast,each,Finished goods
+finished_6,finished_6,1.0,Ethiopia,each,Finished goods
+finished_63,finished_63,1.0,Carmel syrup,each,Finished goods
+finished_64,finished_64,1.0,Hazelnut syrup,each,Finished goods
+finished_65,finished_65,1.0,Sugar Free Vanilla syrup,each,Finished goods
+finished_69,finished_69,1.0,Hazelnut Biscotti,each,Finished goods
+finished_7,finished_7,1.0,Jamacian Coffee River,each,Finished goods
+finished_70,finished_70,1.0,Cranberry Scone,each,Finished goods
+finished_71,finished_71,1.0,Chocolate Croissant,each,Finished goods
+finished_72,finished_72,1.0,Ginger Scone,each,Finished goods
+finished_73,finished_73,1.0,Almond Croissant,each,Finished goods
+finished_74,finished_74,1.0,Ginger Biscotti,each,Finished goods
+finished_75,finished_75,1.0,Croissant,each,Finished goods
+finished_76,finished_76,1.0,Chocolate Chip Biscotti,each,Finished goods
+finished_77,finished_77,1.0,Oatmeal Scone,each,Finished goods
+finished_78,finished_78,1.0,Scottish Cream Scone,each,Finished goods
+finished_79,finished_79,1.0,Jumbo Savory Scone,each,Finished goods
+finished_8,finished_8,1.0,Civet Cat,each,Finished goods
+finished_81,finished_81,1.0,I Need My Bean! T-shirt,each,Finished goods
+finished_82,finished_82,1.0,I Need My Bean! Diner mug,each,Finished goods
+finished_83,finished_83,1.0,I Need My Bean! Latte cup,each,Finished goods
+finished_84,finished_84,1.0,Chocolate syrup,each,Finished goods
+finished_9,finished_9,1.0,Organic Decaf Blend,each,Finished goods
+lid_lg,cup_lg,1.0,Large lid,each,Packaging
+lid_rg,cup_rg,1.0,Regular lid,each,Packaging
+lid_sm,cup_sm,1.0,Small lid,each,Packaging
+milk,milk,1.0,Dairy milk,L,Ingredient
+tea_0,tea_0,1.0,Lemon Grass brewing tea,kg,Ingredient
+tea_1,tea_1,1.0,Peppermint brewing tea,kg,Ingredient
+tea_2,tea_2,1.0,Serenity Green Tea brewing tea,kg,Ingredient
+tea_3,tea_3,1.0,English Breakfast brewing tea,kg,Ingredient
+tea_4,tea_4,1.0,Earl Grey brewing tea,kg,Ingredient
+tea_5,tea_5,1.0,Traditional Blend Chai brewing tea,kg,Ingredient
+tea_6,tea_6,1.0,Morning Sunrise Chai brewing tea,kg,Ingredient
+tea_7,tea_7,1.0,Spicy Eye Opener Chai brewing tea,kg,Ingredient

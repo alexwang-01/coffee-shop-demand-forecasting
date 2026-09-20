@@ -1,0 +1,428 @@
+group_id,date,selected_model,deployed_model,forecast
+brew_beans_0,2023-07-01,Ridge(1),Ridge(1),2.2674034490698087
+brew_beans_0,2023-07-02,Ridge(1),Ridge(1),2.257862906364742
+brew_beans_0,2023-07-03,Ridge(1),Ridge(1),2.2234516784860854
+brew_beans_0,2023-07-04,Ridge(1),Ridge(1),2.1992592747748487
+brew_beans_0,2023-07-05,Ridge(1),Ridge(1),2.247947328006187
+brew_beans_0,2023-07-06,Ridge(1),Ridge(1),2.29860405204119
+brew_beans_0,2023-07-07,Ridge(1),Ridge(1),2.3056959600792424
+brew_beans_1,2023-07-01,HW additive,HW additive,2.1742050083128404
+brew_beans_1,2023-07-02,HW additive,HW additive,2.176358313165161
+brew_beans_1,2023-07-03,HW additive,HW additive,2.1622600228306657
+brew_beans_1,2023-07-04,HW additive,HW additive,2.156624613823525
+brew_beans_1,2023-07-05,HW additive,HW additive,2.142608972465077
+brew_beans_1,2023-07-06,HW additive,HW additive,2.1037668061394377
+brew_beans_1,2023-07-07,HW additive,HW additive,2.227371789862709
+brew_beans_2,2023-07-01,HW multiplicative,HW multiplicative,2.273080844078442
+brew_beans_2,2023-07-02,HW multiplicative,HW multiplicative,2.2106358763876113
+brew_beans_2,2023-07-03,HW multiplicative,HW multiplicative,2.399864578705732
+brew_beans_2,2023-07-04,HW multiplicative,HW multiplicative,2.3920409080645437
+brew_beans_2,2023-07-05,HW multiplicative,HW multiplicative,2.219711332395228
+brew_beans_2,2023-07-06,HW multiplicative,HW multiplicative,2.363238391464368
+brew_beans_2,2023-07-07,HW multiplicative,HW multiplicative,2.2530675700088043
+brew_beans_3,2023-07-01,Random forest,Random forest,2.10184519004664
+brew_beans_3,2023-07-02,Random forest,Random forest,2.2566580302592048
+brew_beans_3,2023-07-03,Random forest,Random forest,2.1402412854370128
+brew_beans_3,2023-07-04,Random forest,Random forest,2.0937681231196685
+brew_beans_3,2023-07-05,Random forest,Random forest,2.001297350222709
+brew_beans_3,2023-07-06,Random forest,Random forest,1.993313369516175
+brew_beans_3,2023-07-07,Random forest,Random forest,1.9857744726933115
+brew_beans_4,2023-07-01,Holt,Holt,1.9157574148973127
+brew_beans_4,2023-07-02,Holt,Holt,1.9206579805486972
+brew_beans_4,2023-07-03,Holt,Holt,1.925558546200082
+brew_beans_4,2023-07-04,Holt,Holt,1.9304591118514665
+brew_beans_4,2023-07-05,Holt,Holt,1.9353596775028512
+brew_beans_4,2023-07-06,Holt,Holt,1.9402602431542357
+brew_beans_4,2023-07-07,Holt,Holt,1.9451608088056205
+cocoa_dark,2023-07-01,MA(14),MA(14),2.1517857142857144
+cocoa_dark,2023-07-02,MA(14),MA(14),2.2119132653061224
+cocoa_dark,2023-07-03,MA(14),MA(14),2.213835641399417
+cocoa_dark,2023-07-04,MA(14),MA(14),2.198038187213661
+cocoa_dark,2023-07-05,MA(14),MA(14),2.248255200586065
+cocoa_dark,2023-07-06,MA(14),MA(14),2.2781305720564986
+cocoa_dark,2023-07-07,MA(14),MA(14),2.2769256129176774
+cocoa_organic,2023-07-01,Linear regression,Linear regression,2.2454444651141983
+cocoa_organic,2023-07-02,Linear regression,Linear regression,2.094584345763604
+cocoa_organic,2023-07-03,Linear regression,Linear regression,2.099979807039174
+cocoa_organic,2023-07-04,Linear regression,Linear regression,2.178016798321402
+cocoa_organic,2023-07-05,Linear regression,Linear regression,2.1588364553514747
+cocoa_organic,2023-07-06,Linear regression,Linear regression,2.18743351546424
+cocoa_organic,2023-07-07,Linear regression,Linear regression,2.1350897877591115
+cup_espresso,2023-07-01,HW multiplicative,HW multiplicative,68.36804586116972
+cup_espresso,2023-07-02,HW multiplicative,HW multiplicative,65.51525937397669
+cup_espresso,2023-07-03,HW multiplicative,HW multiplicative,69.09228614753093
+cup_espresso,2023-07-04,HW multiplicative,HW multiplicative,68.8840239449868
+cup_espresso,2023-07-05,HW multiplicative,HW multiplicative,63.851814326050686
+cup_espresso,2023-07-06,HW multiplicative,HW multiplicative,72.21881893546716
+cup_espresso,2023-07-07,HW multiplicative,HW multiplicative,68.17691757653975
+cup_lg,2023-07-01,ARIMA,ARIMA,535.8963133118203
+cup_lg,2023-07-02,ARIMA,ARIMA,555.3222872463771
+cup_lg,2023-07-03,ARIMA,ARIMA,561.953752497073
+cup_lg,2023-07-04,ARIMA,ARIMA,565.0625524379157
+cup_lg,2023-07-05,ARIMA,ARIMA,567.2014698149288
+cup_lg,2023-07-06,ARIMA,ARIMA,569.0733529707262
+cup_lg,2023-07-07,ARIMA,ARIMA,570.871714570451
+cup_rg,2023-07-01,HW multiplicative,HW multiplicative,567.0342388084472
+cup_rg,2023-07-02,HW multiplicative,HW multiplicative,562.847736849633
+cup_rg,2023-07-03,HW multiplicative,HW multiplicative,581.1274855152668
+cup_rg,2023-07-04,HW multiplicative,HW multiplicative,562.5922650419939
+cup_rg,2023-07-05,HW multiplicative,HW multiplicative,547.3041720926199
+cup_rg,2023-07-06,HW multiplicative,HW multiplicative,575.3720168998665
+cup_rg,2023-07-07,HW multiplicative,HW multiplicative,571.328001672576
+cup_sm,2023-07-01,Holt,Holt,249.6754853270835
+cup_sm,2023-07-02,Holt,Holt,250.4189651280729
+cup_sm,2023-07-03,Holt,Holt,251.16244492906227
+cup_sm,2023-07-04,Holt,Holt,251.90592473005168
+cup_sm,2023-07-05,Holt,Holt,252.64940453104109
+cup_sm,2023-07-06,Holt,Holt,253.3928843320305
+cup_sm,2023-07-07,Holt,Holt,254.1363641330199
+espresso_house,2023-07-01,Holt,Holt,3.2327165597889165
+espresso_house,2023-07-02,Holt,Holt,3.243072011023508
+espresso_house,2023-07-03,Holt,Holt,3.253427462258099
+espresso_house,2023-07-04,Holt,Holt,3.2637829134926903
+espresso_house,2023-07-05,Holt,Holt,3.2741383647272815
+espresso_house,2023-07-06,Holt,Holt,3.284493815961873
+espresso_house,2023-07-07,Holt,Holt,3.294849267196464
+espresso_ouro,2023-07-01,Linear regression,Linear regression,0.4271829308600625
+espresso_ouro,2023-07-02,Linear regression,Linear regression,0.37440997641937135
+espresso_ouro,2023-07-03,Linear regression,Linear regression,0.32510153914174794
+espresso_ouro,2023-07-04,Linear regression,Linear regression,0.29356197541642837
+espresso_ouro,2023-07-05,Linear regression,Linear regression,0.21144624803189335
+espresso_ouro,2023-07-06,Linear regression,Linear regression,0.210369961387012
+espresso_ouro,2023-07-07,Linear regression,Linear regression,0.19585418463710477
+finished_1,2023-07-01,Boosting(10),Boosting(10),1.7837995015531167
+finished_1,2023-07-02,Boosting(10),Boosting(10),1.412439618924584
+finished_1,2023-07-03,Boosting(10),Boosting(10),1.661888699105124
+finished_1,2023-07-04,Boosting(10),Boosting(10),1.3823070351280276
+finished_1,2023-07-05,Boosting(10),Boosting(10),1.7846736566144918
+finished_1,2023-07-06,Boosting(10),Boosting(10),2.025496388351258
+finished_1,2023-07-07,Boosting(10),Boosting(10),1.7055100874257032
+finished_10,2023-07-01,Ridge(10),Ridge(10),0.40001027524707905
+finished_10,2023-07-02,Ridge(10),Ridge(10),0.3775992226687785
+finished_10,2023-07-03,Ridge(10),Ridge(10),0.2584530332199895
+finished_10,2023-07-04,Ridge(10),Ridge(10),0.6308459729750645
+finished_10,2023-07-05,Ridge(10),Ridge(10),0.7485692133350457
+finished_10,2023-07-06,Ridge(10),Ridge(10),0.7759752705351206
+finished_10,2023-07-07,Ridge(10),Ridge(10),0.7885813332859943
+finished_11,2023-07-01,Linear regression,Linear regression,0.44199132513724537
+finished_11,2023-07-02,Linear regression,Linear regression,0.7932434966805961
+finished_11,2023-07-03,Linear regression,Linear regression,0.25890862654766345
+finished_11,2023-07-04,Linear regression,Linear regression,0.8182499851138926
+finished_11,2023-07-05,Linear regression,Linear regression,0.921816924298169
+finished_11,2023-07-06,Linear regression,Linear regression,1.1635091150727443
+finished_11,2023-07-07,Linear regression,Linear regression,0.8923576334205807
+finished_12,2023-07-01,Linear regression,Linear regression,1.2014499282336506
+finished_12,2023-07-02,Linear regression,Linear regression,1.1840312507186936
+finished_12,2023-07-03,Linear regression,Linear regression,1.0398526807912505
+finished_12,2023-07-04,Linear regression,Linear regression,0.7339748831336257
+finished_12,2023-07-05,Linear regression,Linear regression,1.0323493661343406
+finished_12,2023-07-06,Linear regression,Linear regression,1.0085871262178387
+finished_12,2023-07-07,Linear regression,Linear regression,0.8028517914074325
+finished_13,2023-07-01,Linear regression,Linear regression,0.7871519448538218
+finished_13,2023-07-02,Linear regression,Linear regression,0.7787545841020603
+finished_13,2023-07-03,Linear regression,Linear regression,0.5500875503542649
+finished_13,2023-07-04,Linear regression,Linear regression,1.0677074506764235
+finished_13,2023-07-05,Linear regression,Linear regression,1.1525010222187508
+finished_13,2023-07-06,Linear regression,Linear regression,1.943758335274296
+finished_13,2023-07-07,Linear regression,Linear regression,2.232113277794675
+finished_14,2023-07-01,SES,SES,0.7845303831534871
+finished_14,2023-07-02,SES,SES,0.7845303831534871
+finished_14,2023-07-03,SES,SES,0.7845303831534871
+finished_14,2023-07-04,SES,SES,0.7845303831534871
+finished_14,2023-07-05,SES,SES,0.7845303831534871
+finished_14,2023-07-06,SES,SES,0.7845303831534871
+finished_14,2023-07-07,SES,SES,0.7845303831534871
+finished_15,2023-07-01,Ridge(10),Ridge(10),1.1840642383844941
+finished_15,2023-07-02,Ridge(10),Ridge(10),1.2644760919721134
+finished_15,2023-07-03,Ridge(10),Ridge(10),1.008323379156129
+finished_15,2023-07-04,Ridge(10),Ridge(10),0.4838880168875413
+finished_15,2023-07-05,Ridge(10),Ridge(10),0.6966616176698248
+finished_15,2023-07-06,Ridge(10),Ridge(10),1.0497605763356552
+finished_15,2023-07-07,Ridge(10),Ridge(10),1.1084603440615683
+finished_16,2023-07-01,Ridge(10),Ridge(10),1.3471080878831663
+finished_16,2023-07-02,Ridge(10),Ridge(10),0.7856828703063451
+finished_16,2023-07-03,Ridge(10),Ridge(10),1.204095469998169
+finished_16,2023-07-04,Ridge(10),Ridge(10),1.4918560083825314
+finished_16,2023-07-05,Ridge(10),Ridge(10),1.8414107123700907
+finished_16,2023-07-06,Ridge(10),Ridge(10),2.035205781115012
+finished_16,2023-07-07,Ridge(10),Ridge(10),1.868633085082736
+finished_17,2023-07-01,Linear regression,Linear regression,1.3594282346629976
+finished_17,2023-07-02,Linear regression,Linear regression,1.501259671293702
+finished_17,2023-07-03,Linear regression,Linear regression,1.4873200766772763
+finished_17,2023-07-04,Linear regression,Linear regression,1.7079279472716056
+finished_17,2023-07-05,Linear regression,Linear regression,2.023369942281076
+finished_17,2023-07-06,Linear regression,Linear regression,2.2300703819138574
+finished_17,2023-07-07,Linear regression,Linear regression,2.147330149939483
+finished_18,2023-07-01,Linear regression,Linear regression,0.5712101535629245
+finished_18,2023-07-02,Linear regression,Linear regression,0.5243055976259187
+finished_18,2023-07-03,Linear regression,Linear regression,0.5603063914354645
+finished_18,2023-07-04,Linear regression,Linear regression,0.5919710407914112
+finished_18,2023-07-05,Linear regression,Linear regression,1.2175143457161148
+finished_18,2023-07-06,Linear regression,Linear regression,0.9032597155674332
+finished_18,2023-07-07,Linear regression,Linear regression,0.9199946449911615
+finished_19,2023-07-01,Ridge(10),Ridge(10),1.073386629135902
+finished_19,2023-07-02,Ridge(10),Ridge(10),0.8655473057147411
+finished_19,2023-07-03,Ridge(10),Ridge(10),1.4598976183262413
+finished_19,2023-07-04,Ridge(10),Ridge(10),0.9096702298728048
+finished_19,2023-07-05,Ridge(10),Ridge(10),0.8710943325926567
+finished_19,2023-07-06,Ridge(10),Ridge(10),1.2409550884294125
+finished_19,2023-07-07,Ridge(10),Ridge(10),0.656889449220498
+finished_2,2023-07-01,Linear regression,Linear regression,0.4764460092434751
+finished_2,2023-07-02,Linear regression,Linear regression,1.216302456238148
+finished_2,2023-07-03,Linear regression,Linear regression,0.5158963289072932
+finished_2,2023-07-04,Linear regression,Linear regression,0.6940203304403133
+finished_2,2023-07-05,Linear regression,Linear regression,0.6878404364575191
+finished_2,2023-07-06,Linear regression,Linear regression,1.1381136909745402
+finished_2,2023-07-07,Linear regression,Linear regression,1.7296397830858699
+finished_20,2023-07-01,Linear regression,Linear regression,1.4533412372237489
+finished_20,2023-07-02,Linear regression,Linear regression,1.006017482398972
+finished_20,2023-07-03,Linear regression,Linear regression,1.395680555278283
+finished_20,2023-07-04,Linear regression,Linear regression,1.380811974296041
+finished_20,2023-07-05,Linear regression,Linear regression,1.8700449277683768
+finished_20,2023-07-06,Linear regression,Linear regression,2.119457868701296
+finished_20,2023-07-07,Linear regression,Linear regression,2.432942464364719
+finished_21,2023-07-01,Linear regression,Linear regression,0.5528205008885433
+finished_21,2023-07-02,Linear regression,Linear regression,0.4857099702198496
+finished_21,2023-07-03,Linear regression,Linear regression,0.6884318790094331
+finished_21,2023-07-04,Linear regression,Linear regression,1.3730219831214916
+finished_21,2023-07-05,Linear regression,Linear regression,1.753809032962105
+finished_21,2023-07-06,Linear regression,Linear regression,1.964267932149844
+finished_21,2023-07-07,Linear regression,Linear regression,1.7752829334125078
+finished_3,2023-07-01,Linear regression,Linear regression,0.770721405371461
+finished_3,2023-07-02,Linear regression,Linear regression,0.9967722583796329
+finished_3,2023-07-03,Linear regression,Linear regression,1.22364665236516
+finished_3,2023-07-04,Linear regression,Linear regression,1.3325016332766606
+finished_3,2023-07-05,Linear regression,Linear regression,1.4595186477252498
+finished_3,2023-07-06,Linear regression,Linear regression,1.8543020163448898
+finished_3,2023-07-07,Linear regression,Linear regression,2.2591308439641815
+finished_4,2023-07-01,Linear regression,Linear regression,0.8992889204805036
+finished_4,2023-07-02,Linear regression,Linear regression,0.7023847697413244
+finished_4,2023-07-03,Linear regression,Linear regression,0.2440255791602062
+finished_4,2023-07-04,Linear regression,Linear regression,0.0
+finished_4,2023-07-05,Linear regression,Linear regression,0.47973100129163065
+finished_4,2023-07-06,Linear regression,Linear regression,0.7526651769479699
+finished_4,2023-07-07,Linear regression,Linear regression,1.0277449024369467
+finished_5,2023-07-01,Linear regression,Linear regression,1.1739679211669467
+finished_5,2023-07-02,Linear regression,Linear regression,0.23560270666065303
+finished_5,2023-07-03,Linear regression,Linear regression,1.08468024644435
+finished_5,2023-07-04,Linear regression,Linear regression,1.2700713035098965
+finished_5,2023-07-05,Linear regression,Linear regression,1.4337601125758408
+finished_5,2023-07-06,Linear regression,Linear regression,1.8839146499389237
+finished_5,2023-07-07,Linear regression,Linear regression,1.8707332881188157
+finished_6,2023-07-01,Ridge(10),Ridge(10),1.3028767315978484
+finished_6,2023-07-02,Ridge(10),Ridge(10),1.4879465766916666
+finished_6,2023-07-03,Ridge(10),Ridge(10),0.8752402551575005
+finished_6,2023-07-04,Ridge(10),Ridge(10),1.8954340562254595
+finished_6,2023-07-05,Ridge(10),Ridge(10),1.6797650546141942
+finished_6,2023-07-06,Ridge(10),Ridge(10),2.017676151147215
+finished_6,2023-07-07,Ridge(10),Ridge(10),2.7561659439698074
+finished_63,2023-07-01,Naive,Naive,39.0
+finished_63,2023-07-02,Naive,Naive,39.0
+finished_63,2023-07-03,Naive,Naive,39.0
+finished_63,2023-07-04,Naive,Naive,39.0
+finished_63,2023-07-05,Naive,Naive,39.0
+finished_63,2023-07-06,Naive,Naive,39.0
+finished_63,2023-07-07,Naive,Naive,39.0
+finished_64,2023-07-01,Linear regression,Linear regression,15.916438096029852
+finished_64,2023-07-02,Linear regression,Linear regression,10.208647668024842
+finished_64,2023-07-03,Linear regression,Linear regression,13.450255710763264
+finished_64,2023-07-04,Linear regression,Linear regression,13.159229210626348
+finished_64,2023-07-05,Linear regression,Linear regression,15.159207514491882
+finished_64,2023-07-06,Linear regression,Linear regression,23.22101993847005
+finished_64,2023-07-07,Linear regression,Linear regression,23.126704709952218
+finished_65,2023-07-01,Ridge(1),Ridge(1),16.92522685717273
+finished_65,2023-07-02,Ridge(1),Ridge(1),9.161474831286522
+finished_65,2023-07-03,Ridge(1),Ridge(1),21.057662291780225
+finished_65,2023-07-04,Ridge(1),Ridge(1),23.011746468643484
+finished_65,2023-07-05,Ridge(1),Ridge(1),15.459899819637247
+finished_65,2023-07-06,Ridge(1),Ridge(1),20.90196474939402
+finished_65,2023-07-07,Ridge(1),Ridge(1),26.112766048900863
+finished_69,2023-07-01,MA(14),MA(14),14.857142857142858
+finished_69,2023-07-02,MA(14),MA(14),14.775510204081632
+finished_69,2023-07-03,MA(14),MA(14),14.830903790087463
+finished_69,2023-07-04,MA(14),MA(14),14.818825489379424
+finished_69,2023-07-05,MA(14),MA(14),14.44874159576367
+finished_69,2023-07-06,MA(14),MA(14),14.266508852603932
+finished_69,2023-07-07,MA(14),MA(14),13.785545199218499
+finished_7,2023-07-01,Ridge(1),Ridge(1),1.0412470235141955
+finished_7,2023-07-02,Ridge(1),Ridge(1),1.1317401219330105
+finished_7,2023-07-03,Ridge(1),Ridge(1),1.022663840617865
+finished_7,2023-07-04,Ridge(1),Ridge(1),1.2159327178775448
+finished_7,2023-07-05,Ridge(1),Ridge(1),1.2859980321419342
+finished_7,2023-07-06,Ridge(1),Ridge(1),1.8125244118825716
+finished_7,2023-07-07,Ridge(1),Ridge(1),1.3928712997418864
+finished_70,2023-07-01,Holt,Holt,16.50202378383118
+finished_70,2023-07-02,Holt,Holt,16.556353593185367
+finished_70,2023-07-03,Holt,Holt,16.61068340253955
+finished_70,2023-07-04,Holt,Holt,16.665013211893736
+finished_70,2023-07-05,Holt,Holt,16.71934302124792
+finished_70,2023-07-06,Holt,Holt,16.773672830602102
+finished_70,2023-07-07,Holt,Holt,16.82800263995629
+finished_71,2023-07-01,Naive,Naive,29.0
+finished_71,2023-07-02,Naive,Naive,29.0
+finished_71,2023-07-03,Naive,Naive,29.0
+finished_71,2023-07-04,Naive,Naive,29.0
+finished_71,2023-07-05,Naive,Naive,29.0
+finished_71,2023-07-06,Naive,Naive,29.0
+finished_71,2023-07-07,Naive,Naive,29.0
+finished_72,2023-07-01,HW additive,HW additive,24.625063757066304
+finished_72,2023-07-02,HW additive,HW additive,23.601846880523055
+finished_72,2023-07-03,HW additive,HW additive,26.640311414198173
+finished_72,2023-07-04,HW additive,HW additive,25.255759150175322
+finished_72,2023-07-05,HW additive,HW additive,25.640294014058554
+finished_72,2023-07-06,HW additive,HW additive,25.255524545522977
+finished_72,2023-07-07,HW additive,HW additive,26.293959744007648
+finished_73,2023-07-01,HW multiplicative,HW multiplicative,16.626314707322205
+finished_73,2023-07-02,HW multiplicative,HW multiplicative,15.489080067606501
+finished_73,2023-07-03,HW multiplicative,HW multiplicative,16.45391428742294
+finished_73,2023-07-04,HW multiplicative,HW multiplicative,15.572198780764978
+finished_73,2023-07-05,HW multiplicative,HW multiplicative,15.52713078387192
+finished_73,2023-07-06,HW multiplicative,HW multiplicative,17.36135451807373
+finished_73,2023-07-07,HW multiplicative,HW multiplicative,16.328295174523806
+finished_74,2023-07-01,Linear regression,Linear regression,17.238724295592622
+finished_74,2023-07-02,Linear regression,Linear regression,16.38110716081071
+finished_74,2023-07-03,Linear regression,Linear regression,17.613970843881845
+finished_74,2023-07-04,Linear regression,Linear regression,17.459757544431447
+finished_74,2023-07-05,Linear regression,Linear regression,16.94484401955819
+finished_74,2023-07-06,Linear regression,Linear regression,16.451347489068173
+finished_74,2023-07-07,Linear regression,Linear regression,16.68233611571478
+finished_75,2023-07-01,Holt,Holt,15.975320811876744
+finished_75,2023-07-02,Holt,Holt,16.032241041319807
+finished_75,2023-07-03,Holt,Holt,16.08916127076287
+finished_75,2023-07-04,Holt,Holt,16.146081500205934
+finished_75,2023-07-05,Holt,Holt,16.203001729648996
+finished_75,2023-07-06,Holt,Holt,16.259921959092058
+finished_75,2023-07-07,Holt,Holt,16.316842188535123
+finished_76,2023-07-01,Holt,Holt,15.885817359454343
+finished_76,2023-07-02,Holt,Holt,15.943575413797157
+finished_76,2023-07-03,Holt,Holt,16.001333468139972
+finished_76,2023-07-04,Holt,Holt,16.059091522482788
+finished_76,2023-07-05,Holt,Holt,16.1168495768256
+finished_76,2023-07-06,Holt,Holt,16.174607631168417
+finished_76,2023-07-07,Holt,Holt,16.23236568551123
+finished_77,2023-07-01,HW additive,HW additive,15.705856069585785
+finished_77,2023-07-02,HW additive,HW additive,14.287004656258217
+finished_77,2023-07-03,HW additive,HW additive,15.863239847748783
+finished_77,2023-07-04,HW additive,HW additive,14.632802703143184
+finished_77,2023-07-05,HW additive,HW additive,14.402158926971518
+finished_77,2023-07-06,HW additive,HW additive,15.2480236594195
+finished_77,2023-07-07,HW additive,HW additive,15.748460353596187
+finished_78,2023-07-01,Ridge(1),Ridge(1),16.45190965248972
+finished_78,2023-07-02,Ridge(1),Ridge(1),16.887887151396992
+finished_78,2023-07-03,Ridge(1),Ridge(1),16.54807597443649
+finished_78,2023-07-04,Ridge(1),Ridge(1),16.719752225621484
+finished_78,2023-07-05,Ridge(1),Ridge(1),18.757676903269545
+finished_78,2023-07-06,Ridge(1),Ridge(1),16.40782991828766
+finished_78,2023-07-07,Ridge(1),Ridge(1),18.152204051339538
+finished_79,2023-07-01,HW additive,HW additive,15.330006515284976
+finished_79,2023-07-02,HW additive,HW additive,17.532742408398192
+finished_79,2023-07-03,HW additive,HW additive,16.26309807265156
+finished_79,2023-07-04,HW additive,HW additive,17.2595175344724
+finished_79,2023-07-05,HW additive,HW additive,17.374697211302795
+finished_79,2023-07-06,HW additive,HW additive,15.756439717526945
+finished_79,2023-07-07,HW additive,HW additive,16.83597755907703
+finished_8,2023-07-01,Ridge(10),Ridge(10),0.0
+finished_8,2023-07-02,Ridge(10),Ridge(10),2.2658161646281583
+finished_8,2023-07-03,Ridge(10),Ridge(10),2.6020171242018413
+finished_8,2023-07-04,Ridge(10),Ridge(10),1.6988778270795972
+finished_8,2023-07-05,Ridge(10),Ridge(10),1.6714280501608152
+finished_8,2023-07-06,Ridge(10),Ridge(10),2.1313602097734567
+finished_8,2023-07-07,Ridge(10),Ridge(10),2.1868543076540647
+finished_81,2023-07-01,Linear regression,Linear regression,0.7829717553585804
+finished_81,2023-07-02,Linear regression,Linear regression,0.6597883620815878
+finished_81,2023-07-03,Linear regression,Linear regression,0.10158776631014921
+finished_81,2023-07-04,Linear regression,Linear regression,0.5048950768709847
+finished_81,2023-07-05,Linear regression,Linear regression,0.0
+finished_81,2023-07-06,Linear regression,Linear regression,1.2047655001981843
+finished_81,2023-07-07,Linear regression,Linear regression,0.9805755062860483
+finished_82,2023-07-01,Ridge(10),Ridge(10),0.5801893793421338
+finished_82,2023-07-02,Ridge(10),Ridge(10),0.0
+finished_82,2023-07-03,Ridge(10),Ridge(10),1.4110894940886738
+finished_82,2023-07-04,Ridge(10),Ridge(10),1.6035570507364043
+finished_82,2023-07-05,Ridge(10),Ridge(10),1.164539889873049
+finished_82,2023-07-06,Ridge(10),Ridge(10),2.072522807360545
+finished_82,2023-07-07,Ridge(10),Ridge(10),2.8413504790609347
+finished_83,2023-07-01,Linear regression,Linear regression,2.7369408797632766
+finished_83,2023-07-02,Linear regression,Linear regression,2.512262266077853
+finished_83,2023-07-03,Linear regression,Linear regression,2.652070878982602
+finished_83,2023-07-04,Linear regression,Linear regression,2.6885349836142227
+finished_83,2023-07-05,Linear regression,Linear regression,2.670404612432703
+finished_83,2023-07-06,Linear regression,Linear regression,3.153213016653808
+finished_83,2023-07-07,Linear regression,Linear regression,4.282128719215418
+finished_84,2023-07-01,Linear regression,Linear regression,9.116523982269186
+finished_84,2023-07-02,Linear regression,Linear regression,3.1578551688956025
+finished_84,2023-07-03,Linear regression,Linear regression,11.400937540003858
+finished_84,2023-07-04,Linear regression,Linear regression,14.407147900838138
+finished_84,2023-07-05,Linear regression,Linear regression,8.99490877917576
+finished_84,2023-07-06,Linear regression,Linear regression,15.336476008291175
+finished_84,2023-07-07,Linear regression,Linear regression,21.968429400681032
+finished_9,2023-07-01,Ridge(10),Ridge(10),0.325053798031822
+finished_9,2023-07-02,Ridge(10),Ridge(10),0.6919429268771817
+finished_9,2023-07-03,Ridge(10),Ridge(10),1.1339821825180783
+finished_9,2023-07-04,Ridge(10),Ridge(10),0.658451024922684
+finished_9,2023-07-05,Ridge(10),Ridge(10),1.2996916883766678
+finished_9,2023-07-06,Ridge(10),Ridge(10),1.8330724577791722
+finished_9,2023-07-07,Ridge(10),Ridge(10),2.151990283320615
+milk,2023-07-01,Holt,Holt,71.03455997780644
+milk,2023-07-02,Holt,Holt,71.25817280064439
+milk,2023-07-03,Holt,Holt,71.48178562348235
+milk,2023-07-04,Holt,Holt,71.7053984463203
+milk,2023-07-05,Holt,Holt,71.92901126915825
+milk,2023-07-06,Holt,Holt,72.1526240919962
+milk,2023-07-07,Holt,Holt,72.37623691483415
+tea_0,2023-07-01,MA(14),MA(14),0.23435714285714287
+tea_0,2023-07-02,MA(14),MA(14),0.2368826530612245
+tea_0,2023-07-03,MA(14),MA(14),0.239588556851312
+tea_0,2023-07-04,MA(14),MA(14),0.23827345376926284
+tea_0,2023-07-05,MA(14),MA(14),0.24072155760992447
+tea_0,2023-07-06,MA(14),MA(14),0.24377309743920478
+tea_0,2023-07-07,MA(14),MA(14),0.243542604399148
+tea_1,2023-07-01,MA(14),MA(14),0.2664285714285714
+tea_1,2023-07-02,MA(14),MA(14),0.27210204081632655
+tea_1,2023-07-03,MA(14),MA(14),0.2782521865889213
+tea_1,2023-07-04,MA(14),MA(14),0.27391305705955854
+tea_1,2023-07-05,MA(14),MA(14),0.27562113256381277
+tea_1,2023-07-06,MA(14),MA(14),0.2763083563183708
+tea_1,2023-07-07,MA(14),MA(14),0.27625895319825444
+tea_2,2023-07-01,ARIMA,ARIMA,0.23531525548990928
+tea_2,2023-07-02,ARIMA,ARIMA,0.23598670729185042
+tea_2,2023-07-03,ARIMA,ARIMA,0.23665815909379156
+tea_2,2023-07-04,ARIMA,ARIMA,0.2373296108957327
+tea_2,2023-07-05,ARIMA,ARIMA,0.23800106269767385
+tea_2,2023-07-06,ARIMA,ARIMA,0.238672514499615
+tea_2,2023-07-07,ARIMA,ARIMA,0.23934396630155613
+tea_3,2023-07-01,ARIMA,ARIMA,0.2373440946014941
+tea_3,2023-07-02,ARIMA,ARIMA,0.23805753991868558
+tea_3,2023-07-03,ARIMA,ARIMA,0.23877098523587706
+tea_3,2023-07-04,ARIMA,ARIMA,0.23948443055306853
+tea_3,2023-07-05,ARIMA,ARIMA,0.24019787587026
+tea_3,2023-07-06,ARIMA,ARIMA,0.24091132118745148
+tea_3,2023-07-07,ARIMA,ARIMA,0.24162476650464296
+tea_4,2023-07-01,Linear regression,Linear regression,0.27191704327314636
+tea_4,2023-07-02,Linear regression,Linear regression,0.24928756572571667
+tea_4,2023-07-03,Linear regression,Linear regression,0.2336847766666916
+tea_4,2023-07-04,Linear regression,Linear regression,0.23275552863593618
+tea_4,2023-07-05,Linear regression,Linear regression,0.24578692719475317
+tea_4,2023-07-06,Linear regression,Linear regression,0.2605621319676943
+tea_4,2023-07-07,Linear regression,Linear regression,0.23622917581111347
+tea_5,2023-07-01,Naive,Naive,0.183
+tea_5,2023-07-02,Naive,Naive,0.183
+tea_5,2023-07-03,Naive,Naive,0.183
+tea_5,2023-07-04,Naive,Naive,0.183
+tea_5,2023-07-05,Naive,Naive,0.183
+tea_5,2023-07-06,Naive,Naive,0.183
+tea_5,2023-07-07,Naive,Naive,0.183
+tea_6,2023-07-01,Ridge(1),Ridge(1),0.2543274462930648
+tea_6,2023-07-02,Ridge(1),Ridge(1),0.26181195142128305
+tea_6,2023-07-03,Ridge(1),Ridge(1),0.2607084737989882
+tea_6,2023-07-04,Ridge(1),Ridge(1),0.25265810561266006
+tea_6,2023-07-05,Ridge(1),Ridge(1),0.23412420948539764
+tea_6,2023-07-06,Ridge(1),Ridge(1),0.232143403481297
+tea_6,2023-07-07,Ridge(1),Ridge(1),0.251430874231886
+tea_7,2023-07-01,Ridge(10),Ridge(10),0.23606416306463318
+tea_7,2023-07-02,Ridge(10),Ridge(10),0.25147318014539427
+tea_7,2023-07-03,Ridge(10),Ridge(10),0.23782603696125482
+tea_7,2023-07-04,Ridge(10),Ridge(10),0.2527955047747432
+tea_7,2023-07-05,Ridge(10),Ridge(10),0.24585899661897523
+tea_7,2023-07-06,Ridge(10),Ridge(10),0.25222530208016786
+tea_7,2023-07-07,Ridge(10),Ridge(10),0.2424960667245393

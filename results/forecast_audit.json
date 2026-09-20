@@ -1,0 +1,68 @@
+{
+  "weekly": {
+    "status": "pass",
+    "forecast_rows": 53032,
+    "groups": 61,
+    "items": 64,
+    "july_days": 7,
+    "selected_models": {
+      "Linear regression": 19,
+      "Ridge(10)": 9,
+      "Holt": 7,
+      "Ridge(1)": 5,
+      "HW additive": 4,
+      "HW multiplicative": 4,
+      "MA(14)": 4,
+      "ARIMA": 3,
+      "Naive": 3,
+      "Random forest": 1,
+      "Boosting(10)": 1,
+      "SES": 1
+    },
+    "june_mean_MASE": 0.998916674880846,
+    "baseline_mean_MASE": 1.3664936648056853,
+    "groups_worse_than_baseline": 0,
+    "checks": [
+      "source and output hashes",
+      "raw sales/BOM reconciliation",
+      "forecast dates, actuals and historical MASE scales",
+      "both naive formulas",
+      "all saved metrics",
+      "minimum May MSE selection and eligibility",
+      "June displayed metrics",
+      "July dates, model choices, BOM ratios and totals"
+    ]
+  },
+  "monthly": {
+    "status": "pass",
+    "forecast_rows": 57767,
+    "groups": 61,
+    "items": 64,
+    "july_days": 31,
+    "selected_models": {
+      "Linear regression": 27,
+      "Holt": 8,
+      "Ridge(10)": 6,
+      "Naive": 6,
+      "Boosting(10)": 4,
+      "HW additive": 3,
+      "MA(14)": 3,
+      "Ridge(1)": 2,
+      "HW multiplicative": 1,
+      "MA(7)": 1
+    },
+    "june_mean_MASE": 1.0821755234898487,
+    "baseline_mean_MASE": 1.3076241473433738,
+    "groups_worse_than_baseline": 5,
+    "checks": [
+      "source and output hashes",
+      "raw sales/BOM reconciliation",
+      "forecast dates, actuals and historical MASE scales",
+      "both naive formulas",
+      "all saved metrics",
+      "minimum May MSE selection and eligibility",
+      "June displayed metrics",
+      "July dates, model choices, BOM ratios and totals"
+    ]
+  }
+}

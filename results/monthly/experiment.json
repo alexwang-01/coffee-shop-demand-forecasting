@@ -1,0 +1,72 @@
+{
+  "horizon": "next calendar month",
+  "validation_days": 31,
+  "test_days": 30,
+  "july_days": 31,
+  "training_end": "2023-04-30",
+  "validation_origins": [
+    "2023-04-30"
+  ],
+  "test_origins": [
+    "2023-05-31"
+  ],
+  "models": [
+    "Naive",
+    "Seasonal naive",
+    "MA(7)",
+    "MA(14)",
+    "SES",
+    "Holt",
+    "HW additive",
+    "HW multiplicative",
+    "ARIMA",
+    "SARIMA",
+    "Linear regression",
+    "Ridge(1)",
+    "Ridge(10)",
+    "Random forest",
+    "Boosting(1)",
+    "Boosting(10)"
+  ],
+  "selection": "Complete 31-day May validation; choose lowest MSE. Exact ties use alphabetical model name for reproducibility only.",
+  "arima_identification": "Jan-Apr only; bounded AIC grid, orders frozen thereafter",
+  "ml_features": "lags 1,2,3,7,14; previous 7/14-day mean and 7-day standard deviation; linear time and weekday sine/cosine. Recursive calendar-month forecast (30 or 31 days).",
+  "boosting": {
+    "max_iter": 100,
+    "max_depth": 3,
+    "min_samples_leaf": 10,
+    "learning_rate": 0.05,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "random_forest": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "min_samples_leaf": 5,
+    "random_state": 42,
+    "n_jobs": 1
+  },
+  "evaluation": "Retrospective; June was viewed previously. All May and June dates scored. Only one validation month and one test month; selection stability is uncertain.",
+  "input_hashes": {
+    "data/assumptions/bom.csv": "7ff98ae39fdb342d992466eb6f99eaa32cbde874ce2e99533eb42f8eb2df65e6",
+    "data/assumptions/materials.csv": "146a932874881e47adea5e34a540c8707aa0b3db2c62c20f152531dde3d75bf9",
+    "src/monthly_forecasts.py": "be34adfa3d582dd69c45b9031bb205792a24d3f4728910c0f78a99fd6a6342ea",
+    "src/forecast_models.py": "15dc2679ac8a01597b29868d114a99cfcef2e5127484dfd24a1ccd41535bcdbe"
+  },
+  "source_sha256": "287d06d19f7a832d48f1deea7b149836fb32d591010f060bdcf8d1959653bfe1",
+  "group_count": 61,
+  "item_count": 64,
+  "complete": true,
+  "output_hashes": {
+    "hub_daily.csv": "51b1375d572621f4bad46e60e39835c4c2d17c82dc9157f94b1d13528a0ae7dd",
+    "item_groups.csv": "9642289df1d2b18a1f1eb31cfa02b250249c266036f0283a151a87902ba1a91b",
+    "forecasts.csv": "7c5af8203916ed80845ce46206274b3c7ca3f451346c59f1c45d9f26738a2d0f",
+    "fit_status.csv": "4c891db247ffcb73f3c612383a33f300b8cd37d471b79af782d399de18dca4a3",
+    "selection.csv": "bd78a9db569008fa085105ebf3262fec54a62277b78254ba76a7c88ff805630d",
+    "identification.csv": "620927f7c6b395175483d9f57bc1ff5260c160785d8b78dca6e727c55e4d1a68",
+    "july_forecasts.csv": "0be4c910dc26a9c452d18622ecee015f39fca0dbaea59481cfbf74b827a34fe7",
+    "scores.csv": "95c8441d1c3ef9dd6b89f5a4fafd2f3030c14ead4b6bd732ae70b1a114c259d8",
+    "item_selection.csv": "c124c05788490cb64c55e57b10876535228cccb1d7be2258b0e1af3ebe1bf670",
+    "item_july_forecasts.csv": "d6148934e572bf2a03a0bd5764f8f6a810ff69cea970a4433e0f92df92f2d2ea"
+  }
+}
