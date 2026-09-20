@@ -139,11 +139,11 @@ def build_demo(horizon=7, predict_fn=predict):
                 label='Observed example demand',
                 lw=1.7,
             )
-            ax.axvspan(84.5, 84.5 + horizon, color='#635bff', alpha=0.07)
+            ax.axvspan(84.5, 84.5 + horizon, color='#0A66C2', alpha=0.07)
             ax.plot(
                 np.arange(85, 85 + horizon),
                 forecast,
-                color='#635bff',
+                color='#0A66C2',
                 marker='o',
                 label=f'{horizon}-day forecast',
                 lw=2,

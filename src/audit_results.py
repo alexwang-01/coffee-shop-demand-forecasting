@@ -114,13 +114,16 @@ def audit(folder, validation_days, test_days, july_days, raw):
     np.testing.assert_allclose(
         totals.forecast, items.groupby('material_id').forecast.sum().reindex(totals.index)
     )
+    model_counts = dict(
+        sorted(selection.model.value_counts().items(), key=lambda item: (-item[1], item[0]))
+    )
     return {
         'status': 'pass',
         'forecast_rows': len(frame),
         'groups': 61,
         'items': 64,
         'july_days': july_days,
-        'selected_models': selection.model.value_counts().to_dict(),
+        'selected_models': model_counts,
         'june_mean_MASE': float(selected.MASE.mean()),
         'baseline_mean_MASE': float(baseline.MASE.mean()),
         'groups_worse_than_baseline': int((comparison.MASE_s > comparison.MASE_b).sum()),

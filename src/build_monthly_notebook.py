@@ -78,7 +78,7 @@ def note(text):
     display(HTML('<p>' + text + '</p>'))
 plt.rcParams.update({'figure.figsize':(11,3.6), 'font.size':11, 'axes.spines.top':False,
                      'axes.spines.right':False, 'axes.titlelocation':'left'})
-PURPLE, GRAY, TEAL = '#635bff', '#8993a4', '#00857d'
+BLUE, GRAY, TEAL = '#0A66C2', '#8993A4', '#00857D'
 summary = groups.groupby('inventory_type').agg(Items=('material_id','size'), Forecast_groups=('group_id','nunique')).reset_index()
 table(summary.rename(columns={'inventory_type':'Stock type','Forecast_groups':'Forecast groups'}))
 note('The 64 stock items form 61 forecasting groups. Each Small, Regular and Large cup is paired with a matching lid in the BOM, so those three pairs share the same forecast. The remaining items are forecast individually.')
@@ -91,7 +91,7 @@ note('The 64 stock items form 61 forecasting groups. Each Small, Regular and Lar
 import matplotlib.dates as md
 from matplotlib.patches import Patch
 bg, fg, muted = '#ffffff', '#202938', '#596579'
-history, validation, test = '#c4c9d2', '#7864ce', '#368ac1'
+history, validation, test = '#C4C9D2', '#378FE9', '#0A66C2'
 fig, ax = plt.subplots(figsize=(16,5.2), facecolor=bg)
 fig.subplots_adjust(left=.255,right=.96,top=.70,bottom=.30)
 start = pd.Timestamp('2023-01-01')
@@ -187,7 +187,7 @@ ax.set_xlim(-.45,4.45); ax.set_ylim(0,1); ax.axis('off')
 fig.suptitle('From model comparison to next month’s requirements',x=.035,y=.97,ha='left',fontsize=19,fontweight='bold',color='#202938')
 steps = [('MAY','Compare models','31 validation days'),('MAY','Choose per group','Freeze the model choice'),('JUNE','Evaluate forecasts','Compare with the baseline'),('JUNE 30','Update the fit','Use all available history'),('JULY 1–31','Forecast requirements','Daily quantities for planning')]
 for i,(period,title,detail) in enumerate(steps):
-    color = '#7864ce' if i<2 else '#368ac1'
+    color = '#378FE9' if i<2 else '#0A66C2'
     if i<4:
         ax.annotate('',xy=(i+.83,.69),xytext=(i+.17,.69),arrowprops={'arrowstyle':'->','color':'#c4c9d2','lw':1.6})
     ax.scatter(i,.69,s=700,color=color,zorder=3)
@@ -211,7 +211,7 @@ registry.to_csv(OUT / 'group_selection.csv', index_label='group_id')
 note('Eligible candidates counts the model configurations that produced every required May forecast; different parameter settings count separately. The table covers all 61 groups. Cup/lid pairs appear together because their BOM requirements are proportional. Every selected model has the lowest eligible May MSE for its group. Compare MSE within a group, not across different units.')
 counts = choices.groupby('model').size().sort_values()
 fig, ax = plt.subplots(figsize=(11,4))
-ax.barh(counts.index, counts.values, color=PURPLE)
+ax.barh(counts.index, counts.values, color=BLUE)
 ax.bar_label(ax.containers[0], padding=3)
 ax.set_xlim(0, counts.max()*1.15); ax.set_xlabel('Forecasting groups'); ax.set_title('Models selected using May validation')
 plt.tight_layout(); plt.show()
@@ -275,7 +275,7 @@ for row,kind in enumerate(stock_types):
     chosen = chosen_daily.loc[kind]
     base = base_daily.loc[kind]
     left,right = axes[row]
-    left.barh(['Baseline','Selected'],[base.mean(),chosen.mean()],color=[GRAY,PURPLE],height=.45)
+    left.barh(['Baseline','Selected'],[base.mean(),chosen.mean()],color=[GRAY,BLUE],height=.45)
     left.bar_label(left.containers[0],fmt='%.3f',padding=4,fontsize=10)
     left.set_xlim(0,max(base_daily.groupby(level=0).mean())*1.22)
     left.invert_yaxis(); left.set_xlabel('Mean MASE')
@@ -283,7 +283,7 @@ for row,kind in enumerate(stock_types):
     gain = 100*(1-chosen.mean()/base.mean())
     left.set_title(f'{kind} · {count} groups',fontsize=12,weight='bold')
     right.plot(base.index,base.values,color=GRAY,ls='--',label='Last-week-repeat baseline',lw=1.7)
-    right.plot(chosen.index,chosen.values,color=PURPLE,label='Selected models',lw=1.7)
+    right.plot(chosen.index,chosen.values,color=BLUE,label='Selected models',lw=1.7)
     right.set_title(f'{abs(gain):.1f}% {"lower" if gain >= 0 else "higher"} average error',fontsize=12)
     right.set_ylabel('Mean scaled absolute error'); right.set_ylim(bottom=0)
     right.set_xticks(pd.to_datetime(['2023-06-01','2023-06-07','2023-06-14','2023-06-21','2023-06-30']))
@@ -322,9 +322,9 @@ for row in monthly.sort_values('material_name', key=lambda names: names.str.case
     ahead = july.loc[july.material_id.eq(item_id)].sort_values('date')
     fig, ax = plt.subplots(figsize=(13,4.2), facecolor='white')
     ax.plot(past.index,past,color=GRAY,alpha=.4,lw=1.8,label='June recorded requirements')
-    ax.plot([past.index[-1],ahead.date.iloc[0]],[past.iloc[-1],ahead.forecast.iloc[0]],color=PURPLE,alpha=.4,ls=':')
-    ax.axvspan(ahead.date.iloc[0],ahead.date.iloc[-1],color=PURPLE,alpha=.06)
-    ax.plot(ahead.date,ahead.forecast,color=PURPLE,lw=2.4,marker='o',ms=4,label='July 1–31 forecast')
+    ax.plot([past.index[-1],ahead.date.iloc[0]],[past.iloc[-1],ahead.forecast.iloc[0]],color=BLUE,alpha=.4,ls=':')
+    ax.axvspan(ahead.date.iloc[0],ahead.date.iloc[-1],color=BLUE,alpha=.06)
+    ax.plot(ahead.date,ahead.forecast,color=BLUE,lw=2.4,marker='o',ms=4,label='July 1–31 forecast')
     ax.set_title(name,fontsize=15,weight='bold')
     ax.set_ylabel(f'Daily requirement ({unit})')
     ax.set_ylim(bottom=0)
@@ -343,7 +343,7 @@ for row in monthly.sort_values('material_name', key=lambda names: names.str.case
     options.append(f'<option value="{escape(item_id)}" data-kind="{escape(kind)}"{selected_attr}>{escape(name)} ({escape(row.selected_model)})</option>')
 controls = '<div class="forecast-controls"><label>Stock type<select class="forecast-type"><option selected>Ingredient</option><option>Packaging</option><option>Finished goods</option></select></label><label>Stock item<select class="forecast-item">'+''.join(options)+'</select></label></div>'
 display(HTML('<div class="item-forecast-explorer">'+controls+''.join(panels)+'</div>'))
-note('Choose a stock item to see its daily requirements. June provides context; purple shows the July forecast. The monthly total uses the item’s own unit.')
+note('Choose a stock item to see its daily requirements. June provides context; blue shows the July forecast. The monthly total uses the item’s own unit.')
 monthly.to_csv(OUT / 'monthly_requirements.csv',index=False)
 july['period'] = july.date.dt.day.map(lambda d: ['Jul 01–07','Jul 08–14','Jul 15–21','Jul 22–28','Jul 29–31'][(d-1)//7])
 period_columns = sorted(july.period.unique())

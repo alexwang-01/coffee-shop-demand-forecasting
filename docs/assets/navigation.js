@@ -22,6 +22,7 @@ async function loadNotebook() {
     if (!forecast.ok || !eda.ok) throw new Error('Notebook output is unavailable.');
     $('notebook').innerHTML = await forecast.text();
     $('data-notebook').innerHTML = await eda.text();
+    setupSectionCards();
     setupItemForecasts(); setupMethodDemo(); setupForecastSwitch();
     for (const id of ['data','forecasting']) {
       setupReaderToc($(id)); setupReadingPosition($(id));
@@ -35,6 +36,25 @@ async function loadNotebook() {
 }
 window.addEventListener('hashchange', route);
 route(); loadNotebook();
+
+function groupByHeading(container, headingSelector, cardClass) {
+  if (!container || container.dataset.cardsReady) return;
+  container.dataset.cardsReady = 'true';
+  let card = null;
+  [...container.children].forEach(node => {
+    if (node.matches(headingSelector)) {
+      card = document.createElement('section');
+      card.className = cardClass;
+      node.before(card);
+    }
+    if (card) card.append(node);
+  });
+}
+
+function setupSectionCards() {
+  groupByHeading(document.querySelector('#materials'), 'h2', 'bom-section');
+  groupByHeading(document.querySelector('#data .notebook-body'), '.notebook-part', 'analysis-card');
+}
 
 function setupItemForecasts() {
   document.querySelectorAll('.item-forecast-explorer').forEach(explorer => {

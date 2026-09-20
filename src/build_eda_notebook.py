@@ -43,7 +43,7 @@ raw = pd.read_excel(source)
 
 plt.rcParams.update({'figure.figsize': (10, 4), 'font.size': 11,
                      'axes.spines.top': False, 'axes.spines.right': False})
-COLORS = ['#635bce', '#26828e', '#c48646']
+COLORS = ['#0A66C2', '#2A9D8F', '#C77800']
 pd.set_option('display.max_colwidth', 65)
 
 def note(text):

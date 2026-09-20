@@ -1,136 +1,172 @@
 # Coffee Shop Demand Forecasting
 
-[View the interactive analysis](https://alexwang-01.github.io/coffee-shop-demand-forecasting/) ·
-[Methodology](docs/methodology.md) · [Validation notes](docs/validation.md)
+This project converts six months of public coffee-shop transactions into weekly and monthly stock-item demand forecasts for a hypothetical three-outlet business in Singapore. A project-defined bill of materials (BOM) translates the recorded product sales into daily requirements for ingredients, packaging, and ready-to-sell goods.
 
-This project turns six months of coffee-shop transactions into weekly and monthly stock-item demand
-forecasts. It compares 16 classical statistical and machine-learning candidates, selects one method
-for each demand group using May, and evaluates those frozen choices retrospectively on June.
+Sixteen classical statistical and machine-learning candidates compete separately for each demand group. May data select the method with the lowest mean squared error, June evaluates the frozen choices against a seven-day seasonal-naive baseline, and the selected methods are refitted through 30 June to forecast July requirements.
 
-The source data describe three fictitious New York City stores. For the project scenario, their IDs
-are relabelled Store A, Store B and Store C and their derived stock requirements are pooled at one
-hypothetical Singapore hub. The central hub and bill of materials are explicit project assumptions.
+[View the interactive analysis](https://alexwang-01.github.io/coffee-shop-demand-forecasting/) · [Forecasting methodology](docs/methodology.md) · [Validation and limitations](docs/validation.md)
 
-![Hypothetical Singapore hub and three-store network](docs/images/singapore-distribution-network.png)
+![Interactive project overview](docs/images/site-01-overview.png)
 
-## From transactions to forecast requirements
+## Architecture
 
-```text
-149,116 transaction rows
-          │
-          ▼
-80 products × project-defined BOM
-          │
-          ▼
-64 ingredients, packaging and ready-to-sell stock items
-          │
-          ▼
-61 independent demand groups
-          │
-          ├── May: compare 16 candidates and choose lowest MSE per group
-          ├── June: evaluate the frozen choices against seasonal naive
-          └── July: refit selected methods and forecast 7 or 31 days
+```mermaid
+flowchart LR
+    A[149,116 transaction rows] --> B[Data preparation and EDA]
+    B --> C[80 products]
+    C --> D[Project-defined BOM]
+    D --> E[64 stock items]
+    E --> F[61 independent demand groups]
+    F --> G[Weekly experiment<br/>7-day forecasts]
+    F --> H[Monthly experiment<br/>calendar-month forecasts]
+    G --> I[May selection<br/>June evaluation<br/>July 1–7 forecast]
+    H --> J[May selection<br/>June evaluation<br/>July 1–31 forecast]
+    I --> K[Interactive static site]
+    J --> K
 ```
 
-Three pairs of stock items have demand that is exactly proportional under the BOM. The workflow fits
-those shared signals once and restores each item's quantity with its verified ratio. This avoids
-counting duplicate forecasting problems while retaining all 64 stock-item outputs.
+Three cup-and-lid pairs have exactly proportional demand under the BOM. The workflow models each shared signal once, then restores each stock item's quantity with its verified ratio. This retains all 64 item-level outputs while avoiding duplicate forecasting problems.
 
-## What the project demonstrates
+## Key Capabilities
 
-- **Causal backtesting:** each forecast uses only history available at its origin.
-- **Per-group selection:** all eligible candidates compete on the same May dates; the lowest MSE wins.
-- **Separate weekly and monthly decisions:** a sticky horizon switch updates only the horizon-specific
-  content, making the trade-off between 7-day and full-month planning easy to inspect.
-- **Readable evidence:** method explanations, an interactive teaching simulator, category comparisons,
-  model selections and July quantities are shown without exposing notebook code in the interface.
-- **Reproducible outputs:** the source hash, assumptions, result manifests, notebooks and automated
-  reconciliation tests are included.
+- Source-hash verification and explicit separation of observed data from project assumptions
+- Product-to-stock conversion through a documented, project-defined BOM
+- Daily hub requirements pooled across three relabelled stores
+- Weekly rolling-origin validation and full-calendar-month validation
+- Per-group comparison of 16 classical and machine-learning candidates
+- Exact lowest-May-MSE selection with no subjective simplicity rule
+- Frozen model choices evaluated retrospectively on later June dates
+- Seasonal-naive benchmark, interpretable error measures, and category-level comparisons
+- Reconciled July forecasts for all 64 stock items over 7-day and 31-day horizons
+- A responsive GitHub Pages interface with light and dark modes
 
-## Verified June results
+## Forecasting Design
 
-The common baseline repeats the demand observed seven days earlier. MASE puts litres, kilograms and
-individual units on a comparable error scale; lower is better.
+### Experiment Timeline
 
-| Horizon | Selected models | Seasonal-naive baseline | Reduction in mean MASE | Groups worse than baseline |
-|---|---:|---:|---:|---:|
+| Experiment | May model selection | June evaluation | Forward output |
+| --- | --- | --- | --- |
+| Weekly | Four rolling 7-day windows; 28 scored dates | Four rolling 7-day windows; 28 scored dates | 1–7 July |
+| Monthly | One 31-day calendar forecast | One 30-day calendar forecast | 1–31 July |
+
+Every candidate must cover all May dates for the relevant experiment. The candidate with the lowest May MSE is selected for that group; alphabetical order resolves exact numeric ties only. June measures how those choices perform on later dates and never changes the selected model.
+
+### Candidate Methods
+
+| Family | Methods |
+| --- | --- |
+| Classical statistical | Naive, seasonal naive, MA(7), MA(14), SES, Holt, additive Holt-Winters, multiplicative Holt-Winters, ARIMA, SARIMA |
+| Machine learning | Linear regression, Ridge(1), Ridge(10), random forest, Boosting(1), Boosting(10) |
+
+The machine-learning models use demand lags, trailing means and variation, a time index, and weekday sine/cosine features. Multi-step predictions are recursive. ARIMA and SARIMA orders are identified with a bounded AIC search using January–April history and are then frozen. The interactive teaching explorer shows how the methods respond to steady, growing, and weekly demand patterns.
+
+### Measures and Baseline
+
+MSE selects a model within each group. MAE and RMSE express error in the stock item's native unit, Bias indicates systematic under- or overforecasting, and MASE scales error by the group's historical seven-day variation so litres, kilograms, and individual units can be compared.
+
+The common baseline is **seasonal naive**: repeat the demand observed seven days earlier. It is included in the candidate pool and is also the fixed June comparator. MASE values are error scores rather than percentages of demand; lower is better.
+
+## Interactive Analysis
+
+The static site presents the project as four connected sections without exposing notebook code in the reader interface.
+
+| Page | Focus |
+| --- | --- |
+| Overview | Business scenario, project boundary, and analysis roadmap |
+| Products & BOM | Product classification and the stock required for each sale |
+| Data Preparation & EDA | Data-quality checks, business patterns, and conversion to hub requirements |
+| Demand Forecasting | Method explorer, validation design, model choices, June evaluation, and July forecasts |
+
+![Demand forecasting walkthrough](docs/images/site-02-forecasting.png)
+
+The Demand Forecasting page keeps the common methodology at the top. A sticky horizon control appears where the analyses diverge, allowing the reader to switch between weekly and monthly results without returning to the top of the page. Detailed candidate scores, all 61 selected groups, category-level errors, and item-level July quantities remain available in the interactive version.
+
+## Verified Results
+
+The June comparison uses the model selected on May data for each group and the same historical MASE scale for the selected model and baseline.
+
+| Horizon | Selected-model mean MASE | Seasonal-naive mean MASE | Lower average scaled error | Groups worse than baseline |
+| --- | ---: | ---: | ---: | ---: |
 | Weekly | 0.999 | 1.366 | 26.9% | 0 of 61 |
 | Monthly | 1.082 | 1.308 | 17.2% | 5 of 61 |
 
-These figures compare average scaled error, not percentages of demand. The monthly horizon is harder:
-it predicts up to 31 days recursively and offers only one full May validation origin. The interface
-keeps the five weaker monthly groups visible rather than replacing them after seeing June.
+The monthly experiment is harder: it predicts up to 31 days recursively and has only one full validation origin. The five weaker monthly groups remain visible rather than being replaced after observing June.
 
-## Candidate methods
+Automated reconciliation confirms:
 
-| Family | Methods |
-|---|---|
-| Classical | Naive, seasonal naive, MA(7), MA(14), SES, Holt, additive Holt-Winters, multiplicative Holt-Winters, ARIMA, SARIMA |
-| Machine learning | Linear regression, Ridge(1), Ridge(10), random forest, Boosting(1), Boosting(10) |
+- 53,032 weekly and 57,767 monthly saved forecast rows
+- 61 independent groups restored to 64 stock-item outputs
+- correct weekly and monthly forecast dates, actuals, and MASE scales
+- minimum-May-MSE selection among fully eligible candidates
+- agreement between displayed metrics, saved result tables, and July totals
+- source, assumption, and output hashes recorded in the experiment manifests
 
-The ML models use lagged demand, trailing means and variation, a time index and weekday sine/cosine
-features. ARIMA/SARIMA orders are identified on January-April data and frozen. See
-[the methodology](docs/methodology.md) for the full selection and evaluation design.
+The controls establish reproducibility and internal consistency; they are not production-performance or inventory-cost claims. Exact checks and interpretation limits are documented in [validation and limitations](docs/validation.md).
 
-## Repository layout
+## Repository Layout
 
-```text
-├── config/                 Experiment definition and source hash
-├── data/
-│   ├── raw/                Public-domain source workbook
-│   └── assumptions/        Project BOM, material definitions and scenario boundary
-├── docs/                   GitHub Pages site, methodology and validation notes
-├── notebooks/              Executed EDA, weekly and monthly notebooks
-├── results/
-│   ├── eda/                Data-review outputs
-│   ├── weekly/             Seven-day experiment outputs and manifest
-│   └── monthly/            Calendar-month experiment outputs and manifest
-├── src/                    Forecasting, notebook and site build code
-└── tests/                  Selection, causality and reconciliation safeguards
-```
+| Path | Purpose |
+| --- | --- |
+| `config/` | Experiment definition and source hash |
+| `data/raw/` | Unchanged public-domain source workbook |
+| `data/assumptions/` | Project-defined BOM, materials, product mapping, and scenario boundary |
+| `notebooks/` | Executed EDA, weekly forecasting, and monthly forecasting notebooks |
+| `results/eda/` | Prepared daily sales and requirement outputs |
+| `results/weekly/` | Weekly scores, selections, forecasts, and manifests |
+| `results/monthly/` | Monthly scores, selections, forecasts, and manifests |
+| `src/` | Forecasting, notebook-generation, site-build, and audit code |
+| `tests/` | Selection, causality, proportional-group, and reconciliation tests |
+| `docs/` | GitHub Pages site, methodology, validation notes, and project images |
+| `.github/workflows/quality.yml` | Automated tests and Ruff checks |
 
-## Reproduce the analysis
+## Running the Project
 
 Python 3.12 is used by the checked workflow.
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements-dev.txt
+1. Create a virtual environment and install the pinned dependencies.
 
-python src/weekly_forecasts.py
-python src/monthly_forecasts.py
-python src/build_eda_notebook.py
-python src/build_weekly_notebook.py
-python src/build_monthly_notebook.py
-python src/build_site_content.py
-python src/audit_results.py
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   python -m pip install -r requirements-dev.txt
+   ```
 
-$env:PYTHONPATH = "src"
-python -m unittest discover -s tests -p "test_*.py"
-ruff check src tests
-ruff format --check src tests
-```
+2. Rebuild the forecasting results, executed notebooks, and static site.
 
-Preview the static site locally:
+   ```powershell
+   python src/weekly_forecasts.py
+   python src/monthly_forecasts.py
+   python src/build_eda_notebook.py
+   python src/build_weekly_notebook.py
+   python src/build_monthly_notebook.py
+   python src/build_site_content.py
+   python src/audit_results.py
+   ```
 
-```powershell
-python -m http.server 8000 --directory docs
-```
+3. Run the automated checks.
 
-Then open `http://127.0.0.1:8000/`. The published site uses the same static HTML, CSS and JavaScript;
-it does not require a Python server after deployment.
+   ```powershell
+   $env:PYTHONPATH = "src"
+   python -m unittest discover -s tests -p "test_*.py"
+   python -m ruff check src tests
+   python -m ruff format --check src tests
+   Remove-Item Env:PYTHONPATH
+   ```
 
-## Data source and scope
+4. Preview the same static site used by GitHub Pages.
 
-The unchanged workbook is the [Maven Analytics Coffee Shop Sales dataset](https://mavenanalytics.io/data-playground/coffee-shop-sales),
-which Maven describes as transactions for three fictitious NYC stores and licenses as Public Domain.
-The repo separates that observed source from the project-defined Singapore scenario and BOM in
-[data/README.md](data/README.md).
+   ```powershell
+   python -m http.server 8000 --directory docs
+   ```
 
-July actuals are unavailable, so July values are forecasts rather than evaluated results. This release
-stops at demand forecasting: opening inventory, replenishment policy, supplier constraints, cost and
-distribution optimisation remain outside scope.
+   Open `http://127.0.0.1:8000/`. The published interface uses static HTML, CSS, and JavaScript and does not require Streamlit or a Python server after deployment.
 
-Project code and documentation are released under the [MIT License](LICENSE). The source workbook
-retains its Public Domain status and attribution.
+## Source and Scope
+
+The unchanged workbook is the [Maven Analytics Coffee Shop Sales dataset](https://mavenanalytics.io/data-playground/coffee-shop-sales). Maven describes it as transaction records for three fictitious New York City stores and lists the dataset license as **Public Domain**.
+
+The Singapore setting, Store A/B/C labels, central hub, product classification, and BOM are project-defined assumptions. They create a coherent planning scenario but are not attributes supplied by Maven Analytics.
+
+The source data end on 30 June 2023, so July quantities are forecasts rather than evaluated results. This release stops at demand forecasting. Opening inventory, purchase orders, lead times, pack sizes, shelf life, supplier constraints, costs, fill rates, replenishment policy, and distribution optimisation remain outside scope.
+
+Project code and documentation are released under the [MIT License](LICENSE). The source workbook retains its Public Domain status and attribution.

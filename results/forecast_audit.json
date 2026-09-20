@@ -15,8 +15,8 @@
       "MA(14)": 4,
       "ARIMA": 3,
       "Naive": 3,
-      "Random forest": 1,
       "Boosting(10)": 1,
+      "Random forest": 1,
       "SES": 1
     },
     "june_mean_MASE": 0.998916674880846,
@@ -42,8 +42,8 @@
     "selected_models": {
       "Linear regression": 27,
       "Holt": 8,
-      "Ridge(10)": 6,
       "Naive": 6,
+      "Ridge(10)": 6,
       "Boosting(10)": 4,
       "HW additive": 3,
       "MA(14)": 3,
