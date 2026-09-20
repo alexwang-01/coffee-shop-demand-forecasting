@@ -1,12 +1,12 @@
 """Calendar-month coverage, causal prediction and independent result checks."""
 
-import hashlib
 import json
 import unittest
 
 import numpy as np
 import pandas as pd
 
+from forecast_models import stable_sha256
 from monthly_forecasts import MODELS, OUT, ROOT, TEST, VALIDATION, choose, predict
 
 
@@ -51,9 +51,9 @@ class MonthlyTests(unittest.TestCase):
     def test_outputs_and_selection_reconcile(self):
         manifest = json.loads((OUT / 'experiment.json').read_text())
         for path, digest in manifest['input_hashes'].items():
-            self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), digest)
+            self.assertEqual(stable_sha256(ROOT / path), digest)
         for path, digest in manifest['output_hashes'].items():
-            self.assertEqual(hashlib.sha256((OUT / path).read_bytes()).hexdigest(), digest)
+            self.assertEqual(stable_sha256(OUT / path), digest)
         frames = pd.read_csv(OUT / 'forecasts.csv')
         self.assertEqual(VALIDATION, ['2023-04-30'])
         self.assertEqual(TEST, ['2023-05-31'])

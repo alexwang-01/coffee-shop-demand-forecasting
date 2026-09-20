@@ -14,6 +14,7 @@ from tempfile import TemporaryDirectory
 
 import nbformat
 
+from forecast_models import stable_sha256
 from notebook_html import render
 from reader_titles import FORECAST_GROUPS, FORECAST_TITLES
 
@@ -61,9 +62,9 @@ def build():
         manifest = json.loads((path / 'experiment.json').read_text())
         assert manifest['complete']
         for name, digest in manifest['input_hashes'].items():
-            assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest
+            assert stable_sha256(ROOT / name) == digest
         for name, digest in manifest['output_hashes'].items():
-            assert hashlib.sha256((path / name).read_bytes()).hexdigest() == digest
+            assert stable_sha256(path / name) == digest
         sources[horizon] = nbformat.read(notebook, as_version=4)
         provenance[horizon] = hashlib.sha256(notebook.read_bytes()).hexdigest()
     monthly = sources['monthly']

@@ -7,6 +7,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from forecast_models import stable_sha256
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -28,9 +30,9 @@ def audit(folder, validation_days, test_days, july_days, raw):
     path = ROOT / folder
     manifest = json.loads((path / 'experiment.json').read_text())
     for relative, digest in manifest['input_hashes'].items():
-        assert hashlib.sha256((ROOT / relative).read_bytes()).hexdigest() == digest, relative
+        assert stable_sha256(ROOT / relative) == digest, relative
     for relative, digest in manifest['output_hashes'].items():
-        assert hashlib.sha256((path / relative).read_bytes()).hexdigest() == digest, relative
+        assert stable_sha256(path / relative) == digest, relative
     frame = pd.read_csv(path / 'forecasts.csv')
     selection = pd.read_csv(path / 'selection.csv').query("scope == 'all'")
     daily = pd.read_csv(path / 'hub_daily.csv', index_col=0, parse_dates=True)

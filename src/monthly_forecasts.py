@@ -18,7 +18,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from threadpoolctl import threadpool_limits
 
-from forecast_models import fit_arima, fit_smoothing, identify_arima, moving_average
+from forecast_models import fit_arima, fit_smoothing, identify_arima, moving_average, stable_sha256
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'results/monthly'
@@ -314,7 +314,7 @@ def run():
     ]
     manifest = dict(
         POLICY,
-        input_hashes={p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in inputs},
+        input_hashes={p: stable_sha256(ROOT / p) for p in inputs},
         source_sha256=json.loads((ROOT / 'config/experiment.json').read_text())['source_sha256'],
         group_count=groups.group_id.nunique(),
         item_count=len(groups),
@@ -370,8 +370,7 @@ def run():
         'item_july_forecasts',
     ]
     manifest['output_hashes'] = {
-        name + '.csv': hashlib.sha256((OUT / (name + '.csv')).read_bytes()).hexdigest()
-        for name in output_names
+        name + '.csv': stable_sha256(OUT / (name + '.csv')) for name in output_names
     }
     (OUT / 'experiment.json').write_text(json.dumps(manifest, indent=2), encoding='utf8')
     print('Hub benchmark complete.', flush=True)

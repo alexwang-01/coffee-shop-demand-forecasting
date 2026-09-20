@@ -48,25 +48,25 @@
   },
   "evaluation": "Retrospective; June was viewed previously. All May and June dates scored. Only one validation month and one test month; selection stability is uncertain.",
   "input_hashes": {
-    "data/assumptions/bom.csv": "7ff98ae39fdb342d992466eb6f99eaa32cbde874ce2e99533eb42f8eb2df65e6",
-    "data/assumptions/materials.csv": "146a932874881e47adea5e34a540c8707aa0b3db2c62c20f152531dde3d75bf9",
-    "src/monthly_forecasts.py": "be34adfa3d582dd69c45b9031bb205792a24d3f4728910c0f78a99fd6a6342ea",
-    "src/forecast_models.py": "15dc2679ac8a01597b29868d114a99cfcef2e5127484dfd24a1ccd41535bcdbe"
+    "data/assumptions/bom.csv": "c07979d1bcb005f586f00adbfb9de1ad35c76a8353fe5d9f207a64a8b74dca85",
+    "data/assumptions/materials.csv": "f2ff37a2d7896b01997c586a17f5d7c5446ae5859d02b98c2f4a368da6141aed",
+    "src/monthly_forecasts.py": "5d1b433adb2ccbfbbf7a1456b7ca44eeee71307e07b2fc09494d583a78fda119",
+    "src/forecast_models.py": "7727b96b9fb900d58610efaa528cddafbaafa8967ecf2a4a85eb0273b7a8ef71"
   },
   "source_sha256": "287d06d19f7a832d48f1deea7b149836fb32d591010f060bdcf8d1959653bfe1",
   "group_count": 61,
   "item_count": 64,
   "complete": true,
   "output_hashes": {
-    "hub_daily.csv": "51b1375d572621f4bad46e60e39835c4c2d17c82dc9157f94b1d13528a0ae7dd",
-    "item_groups.csv": "9642289df1d2b18a1f1eb31cfa02b250249c266036f0283a151a87902ba1a91b",
-    "forecasts.csv": "7c5af8203916ed80845ce46206274b3c7ca3f451346c59f1c45d9f26738a2d0f",
-    "fit_status.csv": "4c891db247ffcb73f3c612383a33f300b8cd37d471b79af782d399de18dca4a3",
-    "selection.csv": "bd78a9db569008fa085105ebf3262fec54a62277b78254ba76a7c88ff805630d",
-    "identification.csv": "620927f7c6b395175483d9f57bc1ff5260c160785d8b78dca6e727c55e4d1a68",
-    "july_forecasts.csv": "0be4c910dc26a9c452d18622ecee015f39fca0dbaea59481cfbf74b827a34fe7",
-    "scores.csv": "95c8441d1c3ef9dd6b89f5a4fafd2f3030c14ead4b6bd732ae70b1a114c259d8",
-    "item_selection.csv": "c124c05788490cb64c55e57b10876535228cccb1d7be2258b0e1af3ebe1bf670",
-    "item_july_forecasts.csv": "d6148934e572bf2a03a0bd5764f8f6a810ff69cea970a4433e0f92df92f2d2ea"
+    "hub_daily.csv": "951a314cc7e6501b6ccffd71de1fa26ffeee892ebbc6a94633910590ff031400",
+    "item_groups.csv": "04d79bb2d743a7505b8a882a136e0e666ad2d63115cc268f0b3aa817a56b9ace",
+    "forecasts.csv": "07320954257f8e039673b126f4aa1eaaa33dfd9fb6b1a62717bb71b2b225a04a",
+    "fit_status.csv": "29c3dfdb8c68a63c1bbc2637cb3c79e4cbee50df51a430be1dde858501140ea6",
+    "selection.csv": "bb99e04704ca18456409ec11b1b259ac020be7d9b2bb18d1b3b9327ada62e379",
+    "identification.csv": "f170e260380cc91ca77da8534a19ae14f495dcdf39bd2b0fae3cca1cf9504e0f",
+    "july_forecasts.csv": "97bf04c303918273f9304b7f8c22007458f0e4c63bf1520b37193335c3399ecb",
+    "scores.csv": "04c434361390cf53ff82d0670a06de7878a1bebd290a3fd3f5aeda24b54651e9",
+    "item_selection.csv": "bafb70544e72bb86bcd7179f784ff490aa5b6a9b7b94f20d3e4171c9cf4baae0",
+    "item_july_forecasts.csv": "8eab02d1c71b356e864693173956f3f6a1f2ddf21c072014700ceb1c2042725d"
   }
 }

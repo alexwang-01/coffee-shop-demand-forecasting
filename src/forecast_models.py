@@ -1,6 +1,8 @@
 """Shared statistical helpers for the weekly and monthly benchmarks."""
 
+import hashlib
 import warnings
+from pathlib import Path
 
 import numpy as np
 from statsmodels.tsa.holtwinters import ExponentialSmoothing, Holt, SimpleExpSmoothing
@@ -8,6 +10,15 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 from statsmodels.tsa.stattools import adfuller
 
 SEASON = 7
+
+
+def stable_sha256(path):
+    """Hash text reproducibly across Windows and Linux line endings."""
+    path = Path(path)
+    data = path.read_bytes()
+    if path.suffix.lower() in {'.csv', '.json', '.py', '.md', '.html', '.css', '.js'}:
+        data = data.replace(b'\r\n', b'\n')
+    return hashlib.sha256(data).hexdigest()
 
 
 def moving_average(history, window, horizon=7):

@@ -22,7 +22,7 @@ def build():
         'The sales analysis gives us a daily requirement history for each stock item. We now use those histories to estimate the next seven days for the central hub, with all three shops combined. These quantities are based on recorded sales and the defined recipes.',
         r"""
 from pathlib import Path
-import hashlib, json
+import json, sys
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -32,12 +32,14 @@ ROOT = Path.cwd()
 if not (ROOT / 'results/weekly').exists():
     ROOT = ROOT.parent
 OUT = ROOT / 'results/weekly'
+sys.path.insert(0, str(ROOT / 'src'))
+from forecast_models import stable_sha256
 manifest = json.loads((OUT / 'experiment.json').read_text())
 assert manifest['complete']
 for name, digest in manifest['input_hashes'].items():
-    assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest
+    assert stable_sha256(ROOT / name) == digest
 for name, digest in manifest['output_hashes'].items():
-    assert hashlib.sha256((OUT / name).read_bytes()).hexdigest() == digest
+    assert stable_sha256(OUT / name) == digest
 daily = pd.read_csv(OUT / 'hub_daily.csv', index_col=0, parse_dates=True)
 groups = pd.read_csv(OUT / 'item_groups.csv')
 selection = pd.read_csv(OUT / 'selection.csv')
