@@ -1,0 +1,81 @@
+product_id,product_category,product_detail,source_product_detail,mapping_type,assumption,status
+1,Coffee beans,Brazilian - Organic,Brazilian - Organic,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+2,Coffee beans,Our Old Time Diner Blend,Our Old Time Diner Blend,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+3,Coffee beans,Espresso Roast,Espresso Roast,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+4,Coffee beans,Primo Espresso Roast,Primo Espresso Roast,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+5,Coffee beans,Columbian Medium Roast,Columbian Medium Roast,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+6,Coffee beans,Ethiopia,Ethiopia,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+7,Coffee beans,Jamacian Coffee River,Jamacian Coffee River,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+8,Coffee beans,Civet Cat,Civet Cat,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+9,Coffee beans,Organic Decaf Blend,Organic Decaf Blend,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+10,Coffee beans,Guatemalan Sustainably Grown,Guatemalan Sustainably Grown,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+11,Loose Tea,Lemon Grass,Lemon Grass,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+12,Loose Tea,Peppermint,Peppermint,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+13,Loose Tea,English Breakfast,English Breakfast,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+14,Loose Tea,Earl Grey,Earl Grey,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+15,Loose Tea,Serenity Green Tea,Serenity Green Tea,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+16,Loose Tea,Traditional Blend Chai,Traditional Blend Chai,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+17,Loose Tea,Morning Sunrise Chai,Morning Sunrise Chai,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+18,Loose Tea,Spicy Eye Opener Chai,Spicy Eye Opener Chai,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+19,Packaged Chocolate,Dark chocolate,Dark chocolate,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+20,Packaged Chocolate,Sustainably Grown Organic,Sustainably Grown Organic,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+21,Packaged Chocolate,Chili Mayan,Chili Mayan,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+22,Coffee,Our Old Time Diner Blend Sm,Our Old Time Diner Blend Sm,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+23,Coffee,Our Old Time Diner Blend Rg,Our Old Time Diner Blend Rg,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+24,Coffee,Our Old Time Diner Blend Lg,Our Old Time Diner Blend Lg,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+25,Coffee,Brazilian Sm,Brazilian Sm,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+26,Coffee,Brazilian Rg,Brazilian Rg,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+27,Coffee,Brazilian Lg,Brazilian Lg,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+28,Coffee,Columbian Medium Roast Sm,Columbian Medium Roast Sm,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+29,Coffee,Columbian Medium Roast Rg,Columbian Medium Roast Rg,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+30,Coffee,Columbian Medium Roast Lg,Columbian Medium Roast Lg,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+31,Coffee,Ethiopia Sm,Ethiopia Sm,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+32,Coffee,Ethiopia Rg,Ethiopia Rg,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+33,Coffee,Ethiopia Lg,Ethiopia Lg,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+34,Coffee,Jamaican Coffee River Sm,Jamaican Coffee River Sm,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+35,Coffee,Jamaican Coffee River Rg,Jamaican Coffee River Rg,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+36,Coffee,Jamaican Coffee River Lg,Jamaican Coffee River Lg,Recipe BOM,Assume 240/360/480 ml brew-water portions at approximately 10 g beans per 180 ml; no default milk or sugar.,Draft — review required
+37,Coffee,Espresso shot,Espresso shot,Recipe BOM,"Assume 18 g per espresso-based sale, including standalone shots. Latte/Cappuccino without size retain prior draft milk assumptions; sizes require confirmation.",Draft — review required
+38,Coffee,Latte Sm,Latte,Recipe BOM,"Assume 18 g per espresso-based sale, including standalone shots. Latte/Cappuccino without size retain prior draft milk assumptions; sizes require confirmation.",Draft — review required
+39,Coffee,Latte Rg,Latte Rg,Recipe BOM,"Assume 18 g per espresso-based sale, including standalone shots. Latte/Cappuccino without size retain prior draft milk assumptions; sizes require confirmation.",Draft — review required
+40,Coffee,Cappuccino Sm,Cappuccino,Recipe BOM,"Assume 18 g per espresso-based sale, including standalone shots. Latte/Cappuccino without size retain prior draft milk assumptions; sizes require confirmation.",Draft — review required
+41,Coffee,Cappuccino Lg,Cappuccino Lg,Recipe BOM,"Assume 18 g per espresso-based sale, including standalone shots. Latte/Cappuccino without size retain prior draft milk assumptions; sizes require confirmation.",Draft — review required
+42,Tea,Lemon Grass Rg,Lemon Grass Rg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+43,Tea,Lemon Grass Lg,Lemon Grass Lg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+44,Tea,Peppermint Rg,Peppermint Rg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+45,Tea,Peppermint Lg,Peppermint Lg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+46,Tea,Serenity Green Tea Rg,Serenity Green Tea Rg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+47,Tea,Serenity Green Tea Lg,Serenity Green Tea Lg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+48,Tea,English Breakfast Rg,English Breakfast Rg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+49,Tea,English Breakfast Lg,English Breakfast Lg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+50,Tea,Earl Grey Rg,Earl Grey Rg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+51,Tea,Earl Grey Lg,Earl Grey Lg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+52,Tea,Traditional Blend Chai Rg,Traditional Blend Chai Rg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+53,Tea,Traditional Blend Chai Lg,Traditional Blend Chai Lg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+54,Tea,Morning Sunrise Chai Rg,Morning Sunrise Chai Rg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+55,Tea,Morning Sunrise Chai Lg,Morning Sunrise Chai Lg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+56,Tea,Spicy Eye Opener Chai Rg,Spicy Eye Opener Chai Rg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+57,Tea,Spicy Eye Opener Chai Lg,Spicy Eye Opener Chai Lg,Recipe BOM,"Assume loose-leaf infusion: 3 g regular / 4 g large. Chai is brewed tea without default milk or syrup, consistent with the brewed-tea category; recipe unverified.",Draft — review required
+58,Drinking Chocolate,Dark chocolate Rg,Dark chocolate Rg,Recipe BOM,Assume ready-to-use sweetened chocolate premix plus milk. No separate sugar; premix identity and recipe require confirmation.,Draft — review required
+59,Drinking Chocolate,Dark chocolate Lg,Dark chocolate Lg,Recipe BOM,Assume ready-to-use sweetened chocolate premix plus milk. No separate sugar; premix identity and recipe require confirmation.,Draft — review required
+60,Drinking Chocolate,Sustainably Grown Organic Rg,Sustainably Grown Organic Rg,Recipe BOM,Assume ready-to-use sweetened chocolate premix plus milk. No separate sugar; premix identity and recipe require confirmation.,Draft — review required
+61,Drinking Chocolate,Sustainably Grown Organic Lg,Sustainably Grown Organic Lg,Recipe BOM,Assume ready-to-use sweetened chocolate premix plus milk. No separate sugar; premix identity and recipe require confirmation.,Draft — review required
+63,Flavours,Carmel syrup,Carmel syrup,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+64,Flavours,Hazelnut syrup,Hazelnut syrup,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+65,Flavours,Sugar Free Vanilla syrup,Sugar Free Vanilla syrup,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+69,Bakery,Hazelnut Biscotti,Hazelnut Biscotti,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+70,Bakery,Cranberry Scone,Cranberry Scone,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+71,Bakery,Chocolate Croissant,Chocolate Croissant,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+72,Bakery,Ginger Scone,Ginger Scone,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+73,Bakery,Almond Croissant,Almond Croissant,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+74,Bakery,Ginger Biscotti,Ginger Biscotti,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+75,Bakery,Croissant,Croissant,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+76,Bakery,Chocolate Chip Biscotti,Chocolate Chip Biscotti,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+77,Bakery,Oatmeal Scone,Oatmeal Scone,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+78,Bakery,Scottish Cream Scone,Scottish Cream Scone,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+79,Bakery,Jumbo Savory Scone,Jumbo Savory Scone,Finished goods,Assume externally supplied finished pastry; one sale consumes one pastry.,Draft — review required
+81,Branded,I Need My Bean! T-shirt,I Need My Bean! T-shirt,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+82,Branded,I Need My Bean! Diner mug,I Need My Bean! Diner mug,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+83,Branded,I Need My Bean! Latte cup,I Need My Bean! Latte cup,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+84,Flavours,Chocolate syrup,Chocolate syrup,Finished goods,One sale unit consumes one stocked sale unit. Package weight is unknown; no bulk conversion.,Draft — review required
+87,Coffee,Ouro Brasileiro shot,Ouro Brasileiro shot,Recipe BOM,"Assume 18 g per espresso-based sale, including standalone shots. Latte/Cappuccino without size retain prior draft milk assumptions; sizes require confirmation.",Draft — review required

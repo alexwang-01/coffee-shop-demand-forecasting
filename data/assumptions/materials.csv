@@ -1,0 +1,65 @@
+material_id,material_name,unit,inventory_type
+finished_1,Brazilian - Organic,each,Finished goods
+finished_2,Our Old Time Diner Blend,each,Finished goods
+finished_3,Espresso Roast,each,Finished goods
+finished_4,Primo Espresso Roast,each,Finished goods
+finished_5,Columbian Medium Roast,each,Finished goods
+finished_6,Ethiopia,each,Finished goods
+finished_7,Jamacian Coffee River,each,Finished goods
+finished_8,Civet Cat,each,Finished goods
+finished_9,Organic Decaf Blend,each,Finished goods
+finished_10,Guatemalan Sustainably Grown,each,Finished goods
+finished_11,Lemon Grass,each,Finished goods
+finished_12,Peppermint,each,Finished goods
+finished_13,English Breakfast,each,Finished goods
+finished_14,Earl Grey,each,Finished goods
+finished_15,Serenity Green Tea,each,Finished goods
+finished_16,Traditional Blend Chai,each,Finished goods
+finished_17,Morning Sunrise Chai,each,Finished goods
+finished_18,Spicy Eye Opener Chai,each,Finished goods
+finished_19,Dark chocolate,each,Finished goods
+finished_20,Sustainably Grown Organic,each,Finished goods
+finished_21,Chili Mayan,each,Finished goods
+brew_beans_0,Our Old Time Diner Blend brewing beans,kg,Ingredient
+cup_sm,Small cup,each,Packaging
+lid_sm,Small lid,each,Packaging
+cup_rg,Regular cup,each,Packaging
+lid_rg,Regular lid,each,Packaging
+cup_lg,Large cup,each,Packaging
+lid_lg,Large lid,each,Packaging
+brew_beans_1,Brazilian brewing beans,kg,Ingredient
+brew_beans_2,Columbian Medium Roast brewing beans,kg,Ingredient
+brew_beans_3,Ethiopia brewing beans,kg,Ingredient
+brew_beans_4,Jamaican Coffee River brewing beans,kg,Ingredient
+espresso_house,House espresso beans,kg,Ingredient
+cup_espresso,Espresso cup,each,Packaging
+milk,Dairy milk,L,Ingredient
+tea_0,Lemon Grass brewing tea,kg,Ingredient
+tea_1,Peppermint brewing tea,kg,Ingredient
+tea_2,Serenity Green Tea brewing tea,kg,Ingredient
+tea_3,English Breakfast brewing tea,kg,Ingredient
+tea_4,Earl Grey brewing tea,kg,Ingredient
+tea_5,Traditional Blend Chai brewing tea,kg,Ingredient
+tea_6,Morning Sunrise Chai brewing tea,kg,Ingredient
+tea_7,Spicy Eye Opener Chai brewing tea,kg,Ingredient
+cocoa_dark,Dark chocolate premix,kg,Ingredient
+cocoa_organic,Organic chocolate premix,kg,Ingredient
+finished_63,Carmel syrup,each,Finished goods
+finished_64,Hazelnut syrup,each,Finished goods
+finished_65,Sugar Free Vanilla syrup,each,Finished goods
+finished_69,Hazelnut Biscotti,each,Finished goods
+finished_70,Cranberry Scone,each,Finished goods
+finished_71,Chocolate Croissant,each,Finished goods
+finished_72,Ginger Scone,each,Finished goods
+finished_73,Almond Croissant,each,Finished goods
+finished_74,Ginger Biscotti,each,Finished goods
+finished_75,Croissant,each,Finished goods
+finished_76,Chocolate Chip Biscotti,each,Finished goods
+finished_77,Oatmeal Scone,each,Finished goods
+finished_78,Scottish Cream Scone,each,Finished goods
+finished_79,Jumbo Savory Scone,each,Finished goods
+finished_81,I Need My Bean! T-shirt,each,Finished goods
+finished_82,I Need My Bean! Diner mug,each,Finished goods
+finished_83,I Need My Bean! Latte cup,each,Finished goods
+finished_84,Chocolate syrup,each,Finished goods
+espresso_ouro,Ouro Brasileiro espresso beans,kg,Ingredient

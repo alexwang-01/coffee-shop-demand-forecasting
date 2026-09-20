@@ -1,0 +1,19 @@
+{
+  "source": "data/raw/Coffee Shop Sales.xlsx",
+  "source_sha256": "287d06d19f7a832d48f1deea7b149836fb32d591010f060bdcf8d1959653bfe1",
+  "catalogue_scope": "All 80 products are converted through the project BOM into 64 stock items and 61 independent forecasting groups.",
+  "min_active_days": 60,
+  "weekly": {
+    "horizon_days": 7,
+    "validation_origins": ["2023-04-30", "2023-05-07", "2023-05-14", "2023-05-21"],
+    "test_origins": ["2023-05-31", "2023-06-07", "2023-06-14", "2023-06-21"]
+  },
+  "monthly": {
+    "horizon_days": 31,
+    "validation_origins": ["2023-04-30"],
+    "test_origins": ["2023-05-31"]
+  },
+  "selection_measure": "MSE",
+  "comparison_baseline": "Seasonal naive: repeat the demand observed seven days earlier.",
+  "seed": 42
+}

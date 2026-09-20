@@ -1,0 +1,11 @@
+{
+  "version": "forecasting-1",
+  "status": "Project-defined analytical assumptions used to convert product sales into stock-item requirements",
+  "observed_source": "The public workbook provides product transactions, quantities, prices, dates and three source store IDs.",
+  "scenario": "The source store IDs are relabelled Store A, Store B and Store C for a hypothetical Singapore network supplied by one central hub.",
+  "bom": "Recipes, ingredient quantities, packaging quantities and ready-to-sell mappings are project definitions; they are not fields supplied by the source dataset.",
+  "grain": "central-hub calendar date × material_id",
+  "waste": "No unobserved preparation waste, expiry, substitution or shrinkage is added to forecast requirements.",
+  "pooling": "Forecasting adds the three stores' derived requirements at one hypothetical central hub.",
+  "out_of_scope": "Opening stock, purchase orders, lead times, pack sizes, shelf lives, costs, fill rates and distribution decisions are outside this release."
+}
