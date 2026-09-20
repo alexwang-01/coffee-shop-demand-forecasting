@@ -1,0 +1,18 @@
+{
+  "source_notebook_hashes": {
+    "weekly": "31b67b164e39136e9adf15b2a9cbba0e61d6e36633acd7af0b6b9fe1e63d7853",
+    "monthly": "49ef63fb5c5919d477a8d755fecc9766bf2a6aab739433e90a6578bcde91afa1"
+  },
+  "titles": [
+    "Forecasting scope",
+    "Forecasting methods",
+    "Explore the methods",
+    "Forecast measures",
+    "Validation and testing",
+    "May model selection",
+    "June model evaluation",
+    "Errors by stock type",
+    "July requirements"
+  ],
+  "default_horizon": "monthly"
+}

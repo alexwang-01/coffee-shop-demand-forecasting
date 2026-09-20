@@ -183,7 +183,7 @@ def render(nb, output_dir=None):
                     + content
                     + '</div></div>'
                 )
-    (output_dir / 'notebook.html').write_text(
+    document = (
         '<aside class="notebook-toc" aria-label="Analysis sections">'
         + ''.join(
             (
@@ -195,9 +195,10 @@ def render(nb, output_dir=None):
         )
         + '</aside><article class="notebook-body">'
         + ''.join(sections)
-        + '</article>',
-        encoding='utf8',
+        + '</article>'
     )
+    document = re.sub(r'[ \t]+(?=\r?$)', '', document, flags=re.M)
+    (output_dir / 'notebook.html').write_text(document, encoding='utf8')
     (output_dir / 'notebook_render_manifest.json').write_text(
         json.dumps(
             {
