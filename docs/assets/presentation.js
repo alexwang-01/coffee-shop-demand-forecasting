@@ -29,8 +29,8 @@
   }
 
   async function loadPresentation() {
-    const response = await fetch('content/presentation/slides.html?v=v10-cleanup1');
-    if (!response.ok) throw new Error('Presentation files are unavailable.');
+    const response = await fetch('content/presentation/slides.html?v=v10-summary1');
+    if (!response.ok) throw new Error('Summary slides are unavailable.');
     page.innerHTML = await response.text();
 
     const slides = [...page.querySelectorAll('.deck-slide')];
@@ -52,7 +52,7 @@
   function initialize() {
     if (location.hash !== '#presentation' || loading) return;
     loading = loadPresentation().catch(error => {
-      page.textContent = 'Unable to load presentation: ' + error.message;
+      page.textContent = 'Unable to load summary: ' + error.message;
       loading = null;
     });
   }

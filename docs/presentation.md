@@ -1,6 +1,6 @@
-# Presentation maintenance
+# Summary tab maintenance
 
-The `#presentation` tab displays all ten slides from the interview v10 deck in
+The Summary tab (`#presentation`) displays all ten slides from the interview v10 deck in
 one vertical document. Scroll down to read in order, or use the desktop contents
 sidebar to scroll to a slide.
 
