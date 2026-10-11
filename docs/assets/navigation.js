@@ -1,6 +1,6 @@
 const $ = id => document.getElementById(id);
 function route() {
-  const pages = ['overview', 'materials', 'data', 'forecasting'];
+  const pages = ['presentation', 'overview', 'materials', 'data', 'forecasting'];
   const hash = location.hash.slice(1);
   const requested = hash === 'walkthrough' ? 'data' : hash === 'forecasting-weekly' ? 'forecasting' : hash;
   const view = pages.includes(requested) ? requested : 'overview';
@@ -28,7 +28,8 @@ async function loadNotebook() {
       setupReaderToc($(id)); setupReadingPosition($(id));
     }
     $('status').textContent = '';
-    route();
+    // Restore the legacy weekly link after its controls exist, without resetting scroll.
+    if (location.hash === '#forecasting-weekly') window.setForecastHorizon('weekly', false);
   } catch (error) {
     $('status').textContent = 'Unable to load analysis: ' + error.message;
     $('status').className = 'error';

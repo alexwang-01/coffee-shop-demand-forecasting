@@ -1,4 +1,25 @@
 // One result horizon controls all downstream chapters. Teaching controls are independent.
+function setupReadingPosition(page) {
+  const navigation = page.querySelector('.notebook-toc');
+  const header = document.querySelector('.topbar');
+  const bar = page.querySelector('.forecast-switchbar');
+
+  trackReadingPosition({
+    page,
+    navigation,
+    content: page.querySelector('.notebook-body'),
+    links: [...navigation.querySelectorAll('[data-nb-target]')],
+    // The horizon switch changes these targets, so resolve them on each update.
+    sectionFor: link => document.getElementById(link.dataset.nbTarget),
+    readingLine: () => {
+      const headerBottom = header.getBoundingClientRect().bottom;
+      const mobileOffset = matchMedia('(max-width:1000px)').matches ? 45 : 0;
+      const pinned = bar && bar.getBoundingClientRect().top <= headerBottom + mobileOffset + 1;
+      return headerBottom + mobileOffset + (pinned ? bar.offsetHeight : 0) + 32;
+    },
+  });
+}
+
 function readerOffset(target) {
   let offset = document.querySelector('.topbar').getBoundingClientRect().height;
   const page = target.closest('#forecasting, #data');

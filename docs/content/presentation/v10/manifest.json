@@ -1,0 +1,68 @@
+{
+  "source": "Coffee_Shop_Demand_Forecasting_Interview_v10.pptx",
+  "source_sha256": "f4afc1bed32cea3ddbdc866c6a77b927571f08cdfbf0e135974e8876f7fd0437",
+  "width": 1920,
+  "height": 1080,
+  "slides": [
+    {
+      "number": 1,
+      "title": "Coffee Shop Demand Forecasting",
+      "file": "slide-01.png",
+      "sha256": "51f57ae6b3038de9415209f9de144c2bc1f238013c8286a3a609ab1563917c6b"
+    },
+    {
+      "number": 2,
+      "title": "Business Overview",
+      "file": "slide-02.png",
+      "sha256": "96cc1e08dc4d01a7123ba72c7d3845f254fe9138e0177e1d1c21f0e5f96e8f81"
+    },
+    {
+      "number": 3,
+      "title": "Project Workflow",
+      "file": "slide-03.png",
+      "sha256": "8421e2528997eaf995054c27eaad86398a0d3590311933daa630a339052dafb4"
+    },
+    {
+      "number": 4,
+      "title": "Demand Preparation",
+      "file": "slide-04.png",
+      "sha256": "aa8eb1eef42323efef10c52f9cabe4a94efc98e2a64e21ab39f26feffd0760dc"
+    },
+    {
+      "number": 5,
+      "title": "Evaluation Design",
+      "file": "slide-05.png",
+      "sha256": "3a84f7fe2e9609562c90ebf48a92254053f42110cdd938a4cd8f7ed6de964f42"
+    },
+    {
+      "number": 6,
+      "title": "Statistical Methods",
+      "file": "slide-06.png",
+      "sha256": "3c3080d98d936c99251e3ae21a941c5ed4452121f730dbd9bfce81d1dfba8bf6"
+    },
+    {
+      "number": 7,
+      "title": "Machine Learning Methods",
+      "file": "slide-07.png",
+      "sha256": "a4a10e27bb73645df9bbaa71f83eca2a5ad413afaf9b91dfb259273c55401d7a"
+    },
+    {
+      "number": 8,
+      "title": "May Model Selection",
+      "file": "slide-08.png",
+      "sha256": "68a7ba2e0b89240e19c3072af599abfbb6206a1a11d7c7b14b048ba2b7343d71"
+    },
+    {
+      "number": 9,
+      "title": "June Forecast Performance",
+      "file": "slide-09.png",
+      "sha256": "e16bc46727ce02c80d200236caefe62636d4af625d05a6d264172b18cfe5a1b1"
+    },
+    {
+      "number": 10,
+      "title": "July Planning Outlook",
+      "file": "slide-10.png",
+      "sha256": "68fe31a1648c76e642f0bf8edcc686774fe0c0dea078e18bd5e555f7cc64dc7f"
+    }
+  ]
+}

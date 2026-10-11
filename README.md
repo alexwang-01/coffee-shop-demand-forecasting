@@ -68,10 +68,11 @@ The common baseline is **seasonal naive**: repeat the demand observed seven days
 
 ## Interactive Analysis
 
-The static site presents the project as four connected sections without exposing notebook code in the reader interface.
+The static site includes an interview presentation and four detailed analysis sections without exposing notebook code in the reader interface.
 
 | Page | Focus |
 | --- | --- |
+| Presentation | The ten-slide interview deck in a continuous vertical view |
 | Overview | Business scenario, project boundary, and analysis roadmap |
 | Products & BOM | Product classification and the stock required for each sale |
 | Data Preparation & EDA | Data-quality checks, business patterns, and conversion to hub requirements |

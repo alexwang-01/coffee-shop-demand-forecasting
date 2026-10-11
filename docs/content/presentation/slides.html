@@ -1,0 +1,48 @@
+<h1 class="deck-sr-only">Coffee Shop Demand Forecasting Presentation</h1>
+<div class="deck-workspace">
+  <aside class="deck-navigation" aria-label="Presentation contents"></aside>
+  <div class="deck-main">
+    <div class="deck-slides" aria-label="All 10 presentation slides">
+      <figure class="deck-slide" id="presentation-slide-1" data-title="Coffee Shop Demand Forecasting" data-nav-title="Cover" data-group="Project Context" aria-labelledby="presentation-title-1">
+        <figcaption class="deck-sr-only" id="presentation-title-1">Slide 1: Coffee Shop Demand Forecasting</figcaption>
+        <img src="content/presentation/v10/slide-01.png?v=f4afc1be" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" alt="Coffee Shop Demand Forecasting. Time Series Analysis and Stock Planning. Presented by Wang Tzu-Cheng (Alex).">
+      </figure>
+      <figure class="deck-slide" id="presentation-slide-2" data-title="Business Overview" aria-labelledby="presentation-title-2">
+        <figcaption class="deck-sr-only" id="presentation-title-2">Slide 2: Business Overview</figcaption>
+        <img src="content/presentation/v10/slide-02.png?v=f4afc1be" width="1920" height="1080" loading="lazy" decoding="async" alt="Three coffee shops share one central hub. Sales-based forecasts provide daily July stock requirements and monthly totals for the purchasing and stock planning team.">
+      </figure>
+      <figure class="deck-slide" id="presentation-slide-3" data-title="Project Workflow" aria-labelledby="presentation-title-3">
+        <figcaption class="deck-sr-only" id="presentation-title-3">Slide 3: Project Workflow</figcaption>
+        <img src="content/presentation/v10/slide-03.png?v=f4afc1be" width="1920" height="1080" loading="lazy" decoding="async" alt="Sales records and a custom bill of materials produce daily stock requirements. Compare statistical and machine learning models using May MSE, evaluate June forecasts, then refit through June and forecast July.">
+      </figure>
+      <figure class="deck-slide" id="presentation-slide-4" data-title="Demand Preparation" aria-labelledby="presentation-title-4">
+        <figcaption class="deck-sr-only" id="presentation-title-4">Slide 4: Demand Preparation</figcaption>
+        <img src="content/presentation/v10/slide-04.png?v=f4afc1be" width="1920" height="1080" loading="lazy" decoding="async" alt="149,116 sales records cover 80 products across three shops from January to June 2023. A custom BOM converts sales to 64 stock items in 61 forecasting groups, combining three cup-and-lid pairs with proportional demand.">
+      </figure>
+      <figure class="deck-slide" id="presentation-slide-5" data-title="Evaluation Design" data-group="Forecasting Approach" aria-labelledby="presentation-title-5">
+        <figcaption class="deck-sr-only" id="presentation-title-5">Slide 5: Evaluation Design</figcaption>
+        <img src="content/presentation/v10/slide-05.png?v=f4afc1be" width="1920" height="1080" loading="lazy" decoding="async" alt="Train on January to April and select models using May validation. Refit the selected methods on January to May to evaluate June, then on January to June to forecast July. Each month-end run forecasts the entire next month without within-month updates.">
+      </figure>
+      <figure class="deck-slide" id="presentation-slide-6" data-title="Statistical Methods" aria-labelledby="presentation-title-6">
+        <figcaption class="deck-sr-only" id="presentation-title-6">Slide 6: Statistical Methods</figcaption>
+        <img src="content/presentation/v10/slide-06.png?v=f4afc1be" width="1920" height="1080" loading="lazy" decoding="async" alt="Statistical candidates include naive methods, moving averages, exponential smoothing and the ARIMA family. The table compares trend or drift, weekly seasonality, and how each method generates the full month of forecasts.">
+      </figure>
+      <figure class="deck-slide" id="presentation-slide-7" data-title="Machine Learning Methods" aria-labelledby="presentation-title-7">
+        <figcaption class="deck-sr-only" id="presentation-title-7">Slide 7: Machine Learning Methods</figcaption>
+        <img src="content/presentation/v10/slide-07.png?v=f4afc1be" width="1920" height="1080" loading="lazy" decoding="async" alt="Linear regression, ridge regression, random forest and gradient boosting share past demand, rolling statistics, time and weekday features. Recursive forecasting predicts one day, appends the prediction and updates features, using the same fitted model for the whole month.">
+      </figure>
+      <figure class="deck-slide" id="presentation-slide-8" data-title="May Model Selection" data-group="Results and Planning" aria-labelledby="presentation-title-8">
+        <figcaption class="deck-sr-only" id="presentation-title-8">Slide 8: May Model Selection</figcaption>
+        <img src="content/presentation/v10/slide-08.png?v=f4afc1be" width="1920" height="1080" loading="lazy" decoding="async" alt="Choose the lowest May MSE for each of 61 forecasting groups using all 31 validation days. Linear regression is selected for 27 groups. The other 34 groups use Holt, naive, ridge, boosting, moving average or Holt-Winters methods.">
+      </figure>
+      <figure class="deck-slide" id="presentation-slide-9" data-title="June Forecast Performance" aria-labelledby="presentation-title-9">
+        <figcaption class="deck-sr-only" id="presentation-title-9">Slide 9: June Forecast Performance</figcaption>
+        <img src="content/presentation/v10/slide-09.png?v=f4afc1be" width="1920" height="1080" loading="lazy" decoding="async" alt="Compared with the Seasonal Naive baseline, category mean MASE is 22.5% lower for ingredients, 28.5% lower for packaging and 13.4% lower for finished goods. MASE divides June average absolute error by the January-to-May average absolute difference from seven days earlier, allowing group scores to be averaged within each category.">
+      </figure>
+      <figure class="deck-slide" id="presentation-slide-10" data-title="July Planning Outlook" aria-labelledby="presentation-title-10">
+        <figcaption class="deck-sr-only" id="presentation-title-10">Slide 10: July Planning Outlook</figcaption>
+        <img src="content/presentation/v10/slide-10.png?v=f4afc1be" width="1920" height="1080" loading="lazy" decoding="async" alt="July daily forecasts compared with June daily averages: dairy milk 70.3 litres, up 2.2%, with small frequent deliveries; regular cups 587, up 6.0%, with more matching lids; chocolate croissants 23.5 units, down 2.0%, with supply near June levels and small batches to limit leftovers.">
+      </figure>
+    </div>
+  </div>
+</div>
